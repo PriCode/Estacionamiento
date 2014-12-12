@@ -14,3 +14,146 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/final_ing/miraflorespark/index.php/r=gii
 ---
+2014/12/12 13:35:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php
+---
+2014/12/12 13:35:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portero".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('portero')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('portero')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/portero')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+---
+2014/12/12 13:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php
+---
+2014/12/12 13:36:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portero".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('portero')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('portero')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/portero')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:38:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portero".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('portero')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('portero')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/portero')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php
+---
+2014/12/12 13:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portero".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('portero')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('portero')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/portero')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:40:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+---
+2014/12/12 13:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:45:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php
+---
+2014/12/12 13:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/contact
+---
+2014/12/12 13:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/contact
+---

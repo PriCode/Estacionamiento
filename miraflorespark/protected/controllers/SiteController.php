@@ -31,6 +31,20 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
+	
+
+	public function actionAdministrador()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('administrador', array("variable"=>"valor variable"));
+	}
+	public function actionPortero()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('portero');
+	}
 
 	/**
 	 * This is the action to handle external exceptions.
