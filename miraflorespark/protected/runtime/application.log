@@ -1,0 +1,16 @@
+2014/12/12 01:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "r=gii".' in /var/www/html/final_ing/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/final_ing/framework/web/CWebApplication.php(141): CWebApplication->runController('r=gii')
+#1 /var/www/html/final_ing/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/final_ing/miraflorespark/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/final_ing/miraflorespark/index.php/r=gii
+---
+2014/12/12 01:27:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "r=gii".' in /var/www/html/final_ing/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/final_ing/framework/web/CWebApplication.php(141): CWebApplication->runController('r=gii')
+#1 /var/www/html/final_ing/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/final_ing/miraflorespark/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/final_ing/miraflorespark/index.php/r=gii
+---
