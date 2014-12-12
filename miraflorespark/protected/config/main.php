@@ -8,24 +8,27 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Miraflores Park',
+	'aliases'=> array(
+	'bootstrap'=>realpath(__DIR__.'/../extensions/bootstrap')),
 
 	// preloading 'log' component
 	'preload'=>array('log'),
 
 	// autoloading model and component classes
-	'import'=>array(
+		'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'bootstrap.helpers.TbHtml',
 	),
 
 	'modules'=>array(
-		// uncomment the following to enable the Gii tool
-		
+		// uncomment the following to enable the Gii tool		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'.-dogzilla.-',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array('127.0.0.1','192.168.33.1'),
+			'generatorPaths'=> array('bootstrap.gii'),
 		),
 		
 	),
@@ -36,6 +39,11 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+		'bootstrap' => array(
+		 'class' => 'bootstrap.components.TbApi'),
+
+
+
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
