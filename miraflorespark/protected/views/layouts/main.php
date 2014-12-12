@@ -33,7 +33,7 @@
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),	
 				array('label'=>'Administrador', 'url'=>array('/site/administrador'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Portero', 'url'=>array('/site/portero'),'visible'=>!Yii::app()->user->isGuest),				
-				array('label'=>'About', 'url'=>array('/site/pages/about'),'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'),'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Contact', 'url'=>array('/site/contact'),'visible'=>Yii::app()->user->isGuest),
 
 			),
