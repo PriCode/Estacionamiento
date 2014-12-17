@@ -2,10 +2,36 @@
 
 class PorteroController extends Controller
 {
+
+
+	public $layout='//layouts/column3';
+
+
 	public function actionIndex()
 	{
+
 		$this->render('index');
+
 	}
+
+	public function actionRegistro()
+	{
+
+		   
+		    if(isset($_POST['fRegistro']))
+		    {
+
+		    	$rpta="se registro!";
+
+		    }
+
+
+		$this->render('index',array("respuesta"=>$rpta));
+
+		
+
+	}
+
 
 	// Uncomment the following methods and override them if needed
 	/*

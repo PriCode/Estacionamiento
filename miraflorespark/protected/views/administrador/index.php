@@ -1,8 +1,5 @@
 
-
-
-<div class="well" style="max-width: 340px; padding: 8px 0;">
-    <?php echo TbHtml::navList(array(
+    <?php $this->menu=array(
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '#', 'active' => true),
 	    array('label' => 'Tarifa', 'url' => '#'),    
@@ -10,8 +7,8 @@
 	    array('label' => 'Reporte', 'url' => '#'),
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),
-    )); ?>
-    </div>
+    	)
+     ?>
 
 
 <legend>Contratos</legend>
