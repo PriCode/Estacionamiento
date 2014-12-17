@@ -54,7 +54,7 @@
 
 <?php echo TbHtml::beginFormTb(TbHtml::FORM_LAYOUT_HORIZONTAL); ?>
     <fieldset>
-	    <legend>Tarifa Miembros</legend>
+	    <h2>Tarifa Miembros</h2>
 	    
 	    <?php echo TbHtml::label('Por Hora', 'text'); ?>
 	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
@@ -64,7 +64,7 @@
 	    
 	    
 
-	    <legend>Tarifa No Miembros</legend>
+	    <h2>Tarifa No Miembros</h2>
 
 
 	    <?php echo TbHtml::label('Por Hora', 'text'); ?>
@@ -78,8 +78,17 @@
 
 <legend>Lotes</legend>
 
+	<h2>Para Miembros</h2>
+
+	<h2>Para no Miembros</h2>
+
 
 <legend>Reporte</legend>
 
+	<h2>Mes </h2>
+		<?php echo TbHtml::label('Desde:', 'text'); ?>
+	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
 
+	    <?php echo TbHtml::label('Hasta:', 'text'); ?>
+	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
 
