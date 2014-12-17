@@ -1,0 +1,408 @@
+2014/12/12 01:25:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "r=gii".' in /var/www/html/final_ing/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/final_ing/framework/web/CWebApplication.php(141): CWebApplication->runController('r=gii')
+#1 /var/www/html/final_ing/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/final_ing/miraflorespark/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/final_ing/miraflorespark/index.php/r=gii
+---
+2014/12/12 01:27:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "r=gii".' in /var/www/html/final_ing/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/final_ing/framework/web/CWebApplication.php(141): CWebApplication->runController('r=gii')
+#1 /var/www/html/final_ing/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/final_ing/miraflorespark/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/final_ing/miraflorespark/index.php/r=gii
+---
+2014/12/12 13:35:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php
+---
+2014/12/12 13:35:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portero".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('portero')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('portero')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/portero')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+---
+2014/12/12 13:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php
+---
+2014/12/12 13:36:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portero".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('portero')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('portero')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/portero')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:38:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portero".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('portero')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('portero')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/portero')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php
+---
+2014/12/12 13:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portero".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('portero')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('portero')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/portero')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:40:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "administrador".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('administrador')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('administrador')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/administra...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+---
+2014/12/12 13:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/administrador
+---
+2014/12/12 13:45:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php
+---
+2014/12/12 13:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/contact
+---
+2014/12/12 13:46:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/contact
+---
+2014/12/12 13:49:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages/abou...')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/pages/about
+HTTP_REFERER=http://uni.dev/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/contact
+---
+2014/12/12 16:40:51 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (/home/vagrant/uni/estacionamiento/Estacionamiento/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(4333): spl_autoload_call()
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(632): addSpanClass()
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(430): tag()
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/views/site/portero.php(3): lead()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/controllers/SiteController.php(46): SiteController->render()
+#9 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/actions/CInlineAction.php(49): SiteController->actionPortero()
+#10 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(286): SiteController->runAction()
+#12 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (4333)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (632)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (430)
+2014/12/12 16:41:45 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (/home/vagrant/uni/estacionamiento/Estacionamiento/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(4333): spl_autoload_call()
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(632): addSpanClass()
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(430): tag()
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/views/site/portero.php(3): lead()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/controllers/SiteController.php(46): SiteController->render()
+#9 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/actions/CInlineAction.php(49): SiteController->actionPortero()
+#10 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(286): SiteController->runAction()
+#12 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (4333)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (632)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (430)
+2014/12/12 16:44:26 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (/home/vagrant/uni/estacionamiento/Estacionamiento/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(4333): spl_autoload_call()
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(632): addSpanClass()
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(430): tag()
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/views/site/portero.php(3): lead()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/controllers/SiteController.php(46): SiteController->render()
+#9 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/actions/CInlineAction.php(49): SiteController->actionPortero()
+#10 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(286): SiteController->runAction()
+#12 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (4333)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (632)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (430)
+2014/12/12 16:50:13 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (/home/vagrant/uni/estacionamiento/Estacionamiento/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(4333): spl_autoload_call()
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(632): addSpanClass()
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(430): tag()
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/views/site/portero.php(3): lead()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/controllers/SiteController.php(46): SiteController->render()
+#9 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/actions/CInlineAction.php(49): SiteController->actionPortero()
+#10 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(286): SiteController->runAction()
+#12 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (4333)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (632)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (430)
+2014/12/12 16:50:38 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (/home/vagrant/uni/estacionamiento/Estacionamiento/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(4333): spl_autoload_call()
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(632): addSpanClass()
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(452): tag()
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/views/site/portero.php(3): b()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/controllers/SiteController.php(46): SiteController->render()
+#9 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/actions/CInlineAction.php(49): SiteController->actionPortero()
+#10 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(286): SiteController->runAction()
+#12 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (4333)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (632)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (452)
+2014/12/12 16:51:19 [error] [php] include(TbArray.php): failed to open stream: No such file or directory (/home/vagrant/uni/estacionamiento/Estacionamiento/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(4333): spl_autoload_call()
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(632): addSpanClass()
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(452): tag()
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/views/site/portero.php(3): b()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/controllers/SiteController.php(46): SiteController->render()
+#9 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/actions/CInlineAction.php(49): SiteController->actionPortero()
+#10 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(286): SiteController->runAction()
+#12 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=site/portero
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (4333)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (632)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (452)
+2014/12/12 18:04:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/vagrant/uni/estacionamiento/Estacionamiento/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=gii
+---
+2014/12/12 18:05:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.usuario' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `usuario`.
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php (13)
+2014/12/12 18:11:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.usuario' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `usuario`.
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php (13)
+2014/12/12 18:11:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.usuario' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `usuario`.
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php (13)
+2014/12/12 18:14:43 [error] [php] Undefined variable: texto (/home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/views/administrador/index.php:12)
+Stack trace:
+#0 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(869): AdministradorController->renderFile()
+#1 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(782): AdministradorController->renderPartial()
+#2 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(14): AdministradorController->render()
+#3 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#4 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(286): AdministradorController->runAction()
+#6 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#7 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(282): AdministradorController->run()
+#8 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/vagrant/uni/estacionamiento/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/estacionamiento/Estacionamiento/miraflorespark/index.php?r=administrador/index
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/views/administrador/index.php (12)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (14)
+in /home/vagrant/uni/estacionamiento/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 10:27:20 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/home/vagrant/uni/Estacionamiento/framework/web/helpers/CHtml.php:103)
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/helpers/CHtml.php(158): renderAttributes()
+#1 /home/vagrant/uni/Estacionamiento/framework/web/helpers/CHtml.php(339): tag()
+#2 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php(694): beginForm()
+#3 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/views/portero/index.php(23): beginFormTb()
+#4 /home/vagrant/uni/Estacionamiento/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/uni/Estacionamiento/framework/web/CBaseController.php(95): PorteroController->renderInternal()
+#6 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(869): PorteroController->renderFile()
+#7 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(782): PorteroController->renderPartial()
+#8 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php(13): PorteroController->render()
+#9 /home/vagrant/uni/Estacionamiento/framework/web/actions/CInlineAction.php(49): PorteroController->actionIndex()
+#10 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): PorteroController->runAction()
+#12 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): PorteroController->runActionWithFilters()
+#13 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): PorteroController->run()
+#14 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/index
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/extensions/bootstrap/helpers/TbHtml.php (694)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/views/portero/index.php (23)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (13)
+2014/12/17 10:28:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "fRegistro".' in /home/vagrant/uni/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(270): CController->missingAction('fRegistro')
+#1 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('fRegistro')
+#2 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('portero/fRegist...')
+#3 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/fRegistro
+HTTP_REFERER=http://uni.dev/Estacionamiento/miraflorespark/index.php?r=portero/index
+---
+2014/12/17 10:29:21 [error] [php] Undefined variable: rpta (/home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php:29)
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): PorteroController->runAction()
+#1 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): PorteroController->runActionWithFilters()
+#2 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): PorteroController->run()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (29)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 10:31:13 [error] [php] Undefined variable: rpta (/home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php:29)
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): PorteroController->runAction()
+#1 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): PorteroController->runActionWithFilters()
+#2 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): PorteroController->run()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (29)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 10:31:20 [error] [php] Undefined variable: rpta (/home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php:29)
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): PorteroController->runAction()
+#1 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): PorteroController->runActionWithFilters()
+#2 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): PorteroController->run()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (29)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
