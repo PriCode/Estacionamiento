@@ -1,4 +1,3 @@
-
     <?php $this->menu=array(
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '#', 'active' => true),
@@ -10,47 +9,63 @@
     	)
      ?>
 
+<h3>Contratos</h3>
 
-<legend>Contratos</legend>
-
-
-<?php echo TbHtml::beginFormTb(TbHtml::FORM_LAYOUT_HORIZONTAL); ?>
-    <fieldset>
-	    <legend>Registro de Suscripcion</legend>
-
-	    <?php echo TbHtml::label('Nro de Contrato', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
-
-	    <?php echo TbHtml::label('Nombre: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
-
-	    <?php echo TbHtml::label('Apellido: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
-
-	    <?php echo TbHtml::label('Placa: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
-
-	    <?php echo TbHtml::label('Marca: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
-
-	    <?php echo TbHtml::label('Modelo: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
-
-	    <?php // echo TbHtml::checkBox('checkMeOut', false, array('label' => 'Check me out')); ?>
-	    <?php echo TbHtml::submitButton('Registrar'); ?>	    
-
-            <?php echo CHtml::submitButton('Registrar2',array('class'=>'btn btn-primary'));?>
-	    
-	    <?php /*echo TbHtml::checkBoxControlGroup('rememberMe', false, array(
-	    'label' => 'Remember me',
-	    'controlOptions' => array('after' => TbHtml::submitButton('Sign in')),
-	    )); */?>
-
-    </fieldset>
-
-
-
-
+<div class='form'>
+	<?php
+		$form=$this->beginWidget('CActiveForm',array(
+			'method' => 'post',
+			'action' => Yii::app()->createUrl('administrador/index'),
+			'enableClientValidation' => true,
+			'enableAjaxValidation'=>true,
+			'clientOptions'=> array(
+				'validaOnSubmit'=>true,
+			)
+		));
+	?>
+	<div class='row'>
+		<?php
+		echo $form->labelEx($model,'nombres');
+		echo $form->textField($model,'nombres');
+		echo $form->error($model,'nombres',array('class'=>'text-error'));
+		?>
+	</div>
+	<div class='row'>
+		<?php
+		echo $form->labelEx($model,'apellidos');
+		echo $form->textField($model,'apellidos');
+		echo $form->error($model,'apellidos',array('class'=>'text-error'));
+		?>
+	</div>
+	<div class='row'>
+		<?php
+		echo $form->labelEx($model,'placa');
+		echo $form->textField($model,'placa');
+		echo $form->error($model,'placa',array('class'=>'text-error'));
+		?>
+	</div>
+	<div class='row'>
+		<?php
+		echo $form->labelEx($model,'marca');
+		echo $form->textField($model,'marca');
+		echo $form->error($model,'marca',array('class'=>'text-error'));
+		?>
+	</div>
+	<div class='row'>
+		<?php
+		echo $form->labelEx($model,'modelo');
+		echo $form->textField($model,'modelo');
+		echo $form->error($model,'modelo',array('class'=>'text-error'));
+		?>
+	</div>
+	<div class='row'>
+		<?php
+		echo CHtml::submitButton('Registrar contrato',array('class' => 'btn btn-primary'));
+		?>
+	</div>
+	<?php $this->endWidget(); ?>
+	</div>
+	
 <legend>Tarifas</legend>
 
 <?php echo TbHtml::beginFormTb(TbHtml::FORM_LAYOUT_HORIZONTAL); ?>

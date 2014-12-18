@@ -406,3 +406,52 @@ Stack trace:
 REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
 in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (29)
 in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 01:14:40 [error] [php] Undefined variable: model (/var/www/proIISS/miraflorespark/protected/views/administrador/index.php:28)
+Stack trace:
+#0 /var/www/proIISS/framework/web/CController.php(869): AdministradorController->renderFile()
+#1 /var/www/proIISS/framework/web/CController.php(782): AdministradorController->renderPartial()
+#2 /var/www/proIISS/miraflorespark/protected/controllers/AdministradorController.php(14): AdministradorController->render()
+#3 /var/www/proIISS/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#4 /var/www/proIISS/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/proIISS/framework/web/CController.php(286): AdministradorController->runAction()
+#6 /var/www/proIISS/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#7 /var/www/proIISS/framework/web/CWebApplication.php(282): AdministradorController->run()
+#8 /var/www/proIISS/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/proIISS/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/proIISS/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/proIISS/miraflorespark/index.php?r=administrador/index
+in /var/www/proIISS/miraflorespark/protected/views/administrador/index.php (28)
+in /var/www/proIISS/miraflorespark/protected/controllers/AdministradorController.php (14)
+in /var/www/proIISS/miraflorespark/index.php (13)
+2014/12/18 01:39:33 [error] [php] Undefined variable: model (/var/www/proIISS/miraflorespark/protected/views/administrador/index.php:28)
+Stack trace:
+#0 /var/www/proIISS/framework/web/CController.php(869): AdministradorController->renderFile()
+#1 /var/www/proIISS/framework/web/CController.php(782): AdministradorController->renderPartial()
+#2 /var/www/proIISS/miraflorespark/protected/controllers/AdministradorController.php(14): AdministradorController->render()
+#3 /var/www/proIISS/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#4 /var/www/proIISS/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/proIISS/framework/web/CController.php(286): AdministradorController->runAction()
+#6 /var/www/proIISS/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#7 /var/www/proIISS/framework/web/CWebApplication.php(282): AdministradorController->run()
+#8 /var/www/proIISS/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/proIISS/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/proIISS/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/proIISS/miraflorespark/index.php?r=administrador/index
+in /var/www/proIISS/miraflorespark/protected/views/administrador/index.php (28)
+in /var/www/proIISS/miraflorespark/protected/controllers/AdministradorController.php (14)
+in /var/www/proIISS/miraflorespark/index.php (13)
+2014/12/18 01:40:46 [error] [exception.CException] exception 'CException' with message 'AdministradorController cannot find the requested view "administrador".' in /var/www/proIISS/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/proIISS/framework/web/CController.php(782): CController->renderPartial('administrador', Array, true)
+#1 /var/www/proIISS/miraflorespark/protected/controllers/AdministradorController.php(51): CController->render('administrador', Array)
+#2 /var/www/proIISS/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/proIISS/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/proIISS/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/proIISS/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/proIISS/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/proIISS/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/proIISS/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/proIISS/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/proIISS/miraflorespark/index.php?r=administrador/index
+---

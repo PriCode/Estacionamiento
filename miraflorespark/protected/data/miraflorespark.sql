@@ -120,6 +120,21 @@ CREATE TABLE IF NOT EXISTS `miraflorespark`.`ticket` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `miraflorespark`.`contratos`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `miraflorespark`.`contratos` ;
+
+CREATE TABLE IF NOT EXISTS `miraflorespark`.`contratos` (
+  `idContrato` INT PRIMARY KEY AUTO_INCREMENT,
+  `nombres` varchar(80) NULL,
+  `apellidos` varchar(120) NULL,
+  `placa` VARCHAR(7) NULL,
+  `marca` varchar(45)  NULL,
+  `modelo` VARCHAR(45) NULL)
+ENGINE = InnoDB;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
