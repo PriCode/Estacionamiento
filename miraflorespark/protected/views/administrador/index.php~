@@ -2,8 +2,8 @@
     <?php $this->menu=array(
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '?r=administrador/index', 'active' => true),
-	    array('label' => 'Clientes', 'url' => '?r=cliente/admin'),
-	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
+	    array('label' => 'Clientes', 'url' => '?r=administrador/gclientes'),
+	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifa'),    
 	    array('label' => 'Lotes', 'url' => '?r=administrador/glotes'),
 	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
 	    TbHtml::menuDivider(),
@@ -13,7 +13,7 @@
 
 
 <h3>Contratos</h3>
-<?php echo $msg;?>
+
 <div class='form'>
 	<?php
 		$form=$this->beginWidget('CActiveForm',array(
