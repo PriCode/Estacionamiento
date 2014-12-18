@@ -12,19 +12,8 @@ class AdministradorController extends Controller
 	}
 	
 
-	public function actionGclientes(){
-
-
-		$model=new Cliente('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Cliente']))
-			$model->attributes=$_GET['Cliente'];
-
-		$this->render('clientes',array(
-			'model'=>$model,
-		));
-					
-		
+	public function actionGclientes(){		
+		$this->render('clientes');
 	}
 
 	public function actionGlotes(){

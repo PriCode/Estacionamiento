@@ -1,28 +1,35 @@
+<?php $this->menu2=array(
+	array('label'=>'List Cliente', 'url'=>array('index')),
+	array('label'=>'Create Cliente', 'url'=>array('create')),
+	)
+?>
 
-    <?php $this->menu=array(
+ <?php $this->menu=array(
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
-	    array('label' => 'Clientes', 'url' => '?r=administrador/gclientes','active' => true),
+	    array('label' => 'Clientes', 'url' => '?r=cliente/admin','active' => true),
 	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
 	    array('label' => 'Lotes', 'url' => '?r=administrador/glotes'),	    
 	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),
     	)
-     ?>
+?>
 
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#cliente-grid').yiiGridView('update', {
-		data: $(this).serialize()
+
+
+<?Yii::app()->clientScript->registerScript('search', "
+	$('.search-button').click(function(){
+		$('.search-form').toggle();
+		return false;
 	});
-	return false;
-});
-");
+	$('.search-form form').submit(function(){
+		$('#cliente-grid').yiiGridView('update', {
+			data: $(this).serialize()
+		});
+		return false;
+	});
+	");
 ?>
 
 <h1>Manage Clientes</h1>
@@ -34,11 +41,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
+
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
 )); ?>
-</div><!-- search-form -->
 
+</div><!-- search-form -->
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'cliente-grid',
 	'dataProvider'=>$model->search(),

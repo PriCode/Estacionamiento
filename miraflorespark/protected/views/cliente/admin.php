@@ -2,14 +2,10 @@
 /* @var $this ClienteController */
 /* @var $model Cliente */
 
-$this->breadcrumbs=array(
-	'Clientes'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
+$this->menu2=array(
 	array('label'=>'List Cliente', 'url'=>array('index')),
-	array('label'=>'Create Cliente', 'url'=>array('create')),
+	array('label'=>'Create Cliente', 'url'=>array('create')),		
+	array('label'=>'View Cliente', 'url'=>array('view', 'id'=>$model->id_cliente)),	
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,12 +22,21 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Clientes</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+    <?php $this->menu=array(
+	    array('label' => 'Panel de Control'),	    
+	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
+	    array('label' => 'Clientes', 'url' => '?r=cliente/admin', 'active' => true),
+	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
+	    array('label' => 'Lotes', 'url' => '?r=administrador/glotes'),
+	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
+	    TbHtml::menuDivider(),
+	    array('label' => 'Ayuda', 'url' => '#'),
+    	)
+     ?>
+
+<h1>Gestion de Clientes</h1>
+
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
