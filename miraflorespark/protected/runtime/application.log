@@ -406,3 +406,83 @@ Stack trace:
 REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
 in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (29)
 in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 11:42:37 [error] [php] Undefined variable: rpta (/home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php:29)
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): PorteroController->runAction()
+#1 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): PorteroController->runActionWithFilters()
+#2 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): PorteroController->run()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (29)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 12:15:19 [error] [php] Array to string conversion (/home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php:21)
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): PorteroController->runAction()
+#2 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): PorteroController->runActionWithFilters()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): PorteroController->run()
+#4 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (21)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 12:17:42 [error] [php] Undefined variable: rpta (/home/vagrant/uni/Estacionamiento/miraflorespark/protected/views/portero/index.php:34)
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(869): PorteroController->renderFile()
+#1 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(782): PorteroController->renderPartial()
+#2 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php(31): PorteroController->render()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/actions/CInlineAction.php(49): PorteroController->actionRegistro()
+#4 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): PorteroController->runAction()
+#6 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): PorteroController->runActionWithFilters()
+#7 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): PorteroController->run()
+#8 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/views/portero/index.php (34)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (31)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 18:43:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.visita' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `visita`.
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (20)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 18:43:31 [error] [exception.CDbException] exception 'CDbException' with message 'The table "visita" for active record class "Visita" cannot be found in the database.' in /home/vagrant/uni/Estacionamiento/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Visita))
+#1 /home/vagrant/uni/Estacionamiento/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php(20): CActiveRecord->__construct()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/actions/CInlineAction.php(49): PorteroController->actionRegistro()
+#4 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('Registro')
+#8 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('portero/Registr...')
+#9 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+HTTP_REFERER=http://uni.dev/Estacionamiento/miraflorespark/index.php?r=portero/index
+---
+2014/12/17 18:47:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.visita' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `visita`.
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (20)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/17 18:47:30 [error] [exception.CDbException] exception 'CDbException' with message 'The table "visita" for active record class "Visita" cannot be found in the database.' in /home/vagrant/uni/Estacionamiento/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Visita))
+#1 /home/vagrant/uni/Estacionamiento/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php(20): CActiveRecord->__construct()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/actions/CInlineAction.php(49): PorteroController->actionRegistro()
+#4 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('Registro')
+#8 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('portero/Registr...')
+#9 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+HTTP_REFERER=http://uni.dev/Estacionamiento/miraflorespark/index.php?r=portero/index
+---

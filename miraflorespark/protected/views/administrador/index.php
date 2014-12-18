@@ -22,13 +22,13 @@
 	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Nombre: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txtnombre', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Apellido: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txtapellidos', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Placa: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txtplaca', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Marca: ', 'text'); ?>
 	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
@@ -54,38 +54,37 @@
 
 <?php echo TbHtml::beginFormTb(TbHtml::FORM_LAYOUT_HORIZONTAL); ?>
     <fieldset>
-	    <h2>Tarifa Miembros</h2>
+	    <h5>Tarifa Miembros</h5>
 	    
 	    <?php echo TbHtml::label('Por Hora', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txthora_m', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Por Mes: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txtmes_m', '', array('placeholder' => '....')); ?>
 	    
 	    
 
-	    <h2>Tarifa No Miembros</h2>
+	    <h5>Tarifa No Miembros</h5>
 
 
 	    <?php echo TbHtml::label('Por Hora', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txthora_nm', '', array('placeholder' => '....')); ?>
 
-
-		
+	
 		<?php echo TbHtml::submitButton('Registrar'); ?>	    
 	    	    
     </fieldset>
 
 <legend>Lotes</legend>
 
-	<h2>Para Miembros</h2>
+	<h5>Para Miembros</h5>
 
-	<h2>Para no Miembros</h2>
+	<h5>Para no Miembros</h5>
 
 
 <legend>Reporte</legend>
 
-	<h2>Mes </h2>
+	<h5>Mes </h5>
 		<?php echo TbHtml::label('Desde:', 'text'); ?>
 	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
 
