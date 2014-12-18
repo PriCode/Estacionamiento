@@ -2,7 +2,7 @@
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
 	    array('label' => 'Clientes', 'url' => '?r=cliente/admin'),
-	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
+	    array('label' => 'Tarifa', 'url' => '?r=administrador/tarifa'),
 	    array('label' => 'Lotes', 'url' => '?r=administrador/glotes','active' => true),	    
 	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
 	    TbHtml::menuDivider(),
