@@ -1,8 +1,5 @@
 
-
-
-<div class="well" style="max-width: 340px; padding: 8px 0;">
-    <?php echo TbHtml::navList(array(
+    <?php $this->menu=array(
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '#', 'active' => true),
 	    array('label' => 'Tarifa', 'url' => '#'),    
@@ -10,8 +7,8 @@
 	    array('label' => 'Reporte', 'url' => '#'),
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),
-    )); ?>
-    </div>
+    	)
+     ?>
 
 
 <legend>Contratos</legend>
@@ -25,13 +22,13 @@
 	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Nombre: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txtnombre', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Apellido: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txtapellidos', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Placa: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txtplaca', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Marca: ', 'text'); ?>
 	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
@@ -57,32 +54,40 @@
 
 <?php echo TbHtml::beginFormTb(TbHtml::FORM_LAYOUT_HORIZONTAL); ?>
     <fieldset>
-	    <legend>Tarifa Miembros</legend>
+	    <h5>Tarifa Miembros</h5>
 	    
 	    <?php echo TbHtml::label('Por Hora', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txthora_m', '', array('placeholder' => '....')); ?>
 
 	    <?php echo TbHtml::label('Por Mes: ', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txtmes_m', '', array('placeholder' => '....')); ?>
 	    
 	    
 
-	    <legend>Tarifa No Miembros</legend>
+	    <h5>Tarifa No Miembros</h5>
 
 
 	    <?php echo TbHtml::label('Por Hora', 'text'); ?>
-	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
+	    <?php echo TbHtml::textField('txthora_nm', '', array('placeholder' => '....')); ?>
 
-
-		
+	
 		<?php echo TbHtml::submitButton('Registrar'); ?>	    
 	    	    
     </fieldset>
 
 <legend>Lotes</legend>
 
+	<h5>Para Miembros</h5>
+
+	<h5>Para no Miembros</h5>
+
 
 <legend>Reporte</legend>
 
+	<h5>Mes </h5>
+		<?php echo TbHtml::label('Desde:', 'text'); ?>
+	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
 
+	    <?php echo TbHtml::label('Hasta:', 'text'); ?>
+	    <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
 
