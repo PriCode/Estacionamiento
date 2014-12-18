@@ -38,7 +38,7 @@ class AdministradorController extends Controller
 	                }
 	        }
 	        
-		$this->render('index',array('model'=>$model,'msg'=>$msg));
+		$this->render('index',array('model'=>$model));
 	}
 	
 

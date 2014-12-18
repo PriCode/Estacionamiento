@@ -81,3 +81,658 @@ Stack trace:
 REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
 HTTP_REFERER=http://uni.dev/Estacionamiento/miraflorespark/index.php?r=administrador/index
 ---
+2014/12/18 02:15:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/Estacionamiento/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/Estacionamiento/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/Estacionamiento/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/Estacionamiento/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/Estacionamiento/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Cliente))
+#7 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(18): CActiveRecord->__construct('search')
+#9 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#10 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#14 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#15 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:15:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /var/www/Estacionamiento/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/Estacionamiento/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/Estacionamiento/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/Estacionamiento/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/Estacionamiento/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Cliente))
+#7 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(18): CActiveRecord->__construct('search')
+#9 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#10 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#14 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#15 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/gtarifas
+---
+2014/12/18 02:17:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.cliente' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `cliente`.
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (18)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:17:04 [error] [exception.CDbException] exception 'CDbException' with message 'The table "cliente" for active record class "Cliente" cannot be found in the database.' in /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php:2362
+Stack trace:
+#0 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Cliente))
+#1 /var/www/Estacionamiento/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(18): CActiveRecord->__construct('search')
+#3 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#4 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#8 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#9 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+---
+2014/12/18 02:19:21 [error] [exception.CException] exception 'CException' with message 'AdministradorController cannot find the requested view "_search".' in /var/www/Estacionamiento/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/clientes.php(39): CController->renderPartial('_search', Array)
+#1 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#2 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#3 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#4 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('clientes', Array, true)
+#5 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(25): CController->render('clientes', Array)
+#6 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#7 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#11 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#12 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+---
+2014/12/18 02:20:18 [error] [exception.CException] exception 'CException' with message 'AdministradorController cannot find the requested view "_search".' in /var/www/Estacionamiento/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/clientes.php(39): CController->renderPartial('_search', Array)
+#1 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#2 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#3 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#4 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('clientes', Array, true)
+#5 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(25): CController->render('clientes', Array)
+#6 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#7 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#11 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#12 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+---
+2014/12/18 02:20:42 [error] [exception.CException] exception 'CException' with message 'AdministradorController cannot find the requested view "_search".' in /var/www/Estacionamiento/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/clientes.php(39): CController->renderPartial('_search', Array)
+#1 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#2 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#3 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#4 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('clientes', Array, true)
+#5 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(25): CController->render('clientes', Array)
+#6 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#7 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#11 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#12 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:21:21 [error] [exception.CException] exception 'CException' with message 'AdministradorController cannot find the requested view "_search".' in /var/www/Estacionamiento/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/clientes.php(39): CController->renderPartial('_search', Array)
+#1 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#2 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#3 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#4 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('clientes', Array, true)
+#5 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(25): CController->render('clientes', Array)
+#6 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#7 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#11 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#12 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:22:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gtarifa".' in /var/www/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/CController.php(270): CController->missingAction('gtarifa')
+#1 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gtarifa')
+#2 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#3 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gtarifa
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:28:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gtarifa".' in /var/www/Estacionamiento/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/CController.php(270): CController->missingAction('gtarifa')
+#1 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gtarifa')
+#2 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#3 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gtarifa
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:33:04 [error] [php] Undefined variable: model (/var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php:31)
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/CController.php(869): AdministradorController->renderFile()
+#1 /var/www/Estacionamiento/framework/web/CController.php(782): AdministradorController->renderPartial()
+#2 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(11): AdministradorController->render()
+#3 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#4 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/Estacionamiento/framework/web/CController.php(286): AdministradorController->runAction()
+#6 /var/www/Estacionamiento/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): AdministradorController->run()
+#8 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+in /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php (31)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (11)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:33:08 [error] [php] Undefined variable: model (/var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php:31)
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/CController.php(869): AdministradorController->renderFile()
+#1 /var/www/Estacionamiento/framework/web/CController.php(782): AdministradorController->renderPartial()
+#2 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(11): AdministradorController->render()
+#3 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#4 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/Estacionamiento/framework/web/CController.php(286): AdministradorController->runAction()
+#6 /var/www/Estacionamiento/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): AdministradorController->run()
+#8 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+in /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php (31)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (11)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:34:15 [error] [php] include(RegistraContrato.php): failed to open stream: No such file or directory (/var/www/Estacionamiento/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(11): spl_autoload_call()
+#1 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#2 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/Estacionamiento/framework/web/CController.php(286): AdministradorController->runAction()
+#4 /var/www/Estacionamiento/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#5 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): AdministradorController->run()
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (11)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:38:30 [error] [exception.CException] exception 'CException' with message 'Property "RegistraContrato.fecha" is not defined.' in /var/www/Estacionamiento/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2529): CComponent->__get('fecha')
+#1 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(RegistraContrato), 'fecha')
+#2 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(RegistraContrato), 'fecha', Array)
+#3 /var/www/Estacionamiento/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(RegistraContrato), 'fecha', Array)
+#4 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php(32): CActiveForm->textField(Object(RegistraContrato), 'fecha')
+#5 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#6 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#7 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#8 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(41): CController->render('index', Array)
+#10 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#11 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#16 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:41:04 [error] [exception.CException] exception 'CException' with message 'Property "RegistraContrato.cantidad_meses" is not defined.' in /var/www/Estacionamiento/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2529): CComponent->__get('cantidad_meses')
+#1 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(RegistraContrato), 'cantidad_meses')
+#2 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(RegistraContrato), 'cantidad_meses', Array)
+#3 /var/www/Estacionamiento/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(RegistraContrato), 'cantidad_meses', Array)
+#4 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php(39): CActiveForm->textField(Object(RegistraContrato), 'cantidad_meses')
+#5 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#6 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#7 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#8 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(41): CController->render('index', Array)
+#10 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#11 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#16 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:42:29 [error] [exception.CException] exception 'CException' with message 'Property "RegistraContrato.id_tarjeta" is not defined.' in /var/www/Estacionamiento/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2529): CComponent->__get('id_tarjeta')
+#1 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(RegistraContrato), 'id_tarjeta')
+#2 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(RegistraContrato), 'id_tarjeta', Array)
+#3 /var/www/Estacionamiento/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(RegistraContrato), 'id_tarjeta', Array)
+#4 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php(60): CActiveForm->textField(Object(RegistraContrato), 'id_tarjeta')
+#5 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#6 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#7 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#8 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(41): CController->render('index', Array)
+#10 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#11 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#16 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:42:43 [error] [exception.CException] exception 'CException' with message 'Property "RegistraContrato.id_tarjeta" is not defined.' in /var/www/Estacionamiento/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2529): CComponent->__get('id_tarjeta')
+#1 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(RegistraContrato), 'id_tarjeta')
+#2 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(RegistraContrato), 'id_tarjeta', Array)
+#3 /var/www/Estacionamiento/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(RegistraContrato), 'id_tarjeta', Array)
+#4 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php(60): CActiveForm->textField(Object(RegistraContrato), 'id_tarjeta')
+#5 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#6 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#7 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#8 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(41): CController->render('index', Array)
+#10 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#11 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#16 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:43:01 [error] [exception.CException] exception 'CException' with message 'Property "RegistraContrato.id_tarjeta" is not defined.' in /var/www/Estacionamiento/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2529): CComponent->__get('id_tarjeta')
+#1 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(RegistraContrato), 'id_tarjeta')
+#2 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(RegistraContrato), 'id_tarjeta', Array)
+#3 /var/www/Estacionamiento/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(RegistraContrato), 'id_tarjeta', Array)
+#4 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php(60): CActiveForm->textField(Object(RegistraContrato), 'id_tarjeta')
+#5 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#6 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#7 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#8 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#9 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(41): CController->render('index', Array)
+#10 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#11 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#16 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:46:10 [error] [exception.CException] exception 'CException' with message 'Property "RegistraContrato.nombres" is not defined.' in /var/www/Estacionamiento/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): CComponent->__get('nombres')
+#1 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#2 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#7 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:47:43 [error] [php] Undefined variable: fecha (/var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php:29)
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/CController.php(286): AdministradorController->runAction()
+#1 /var/www/Estacionamiento/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#2 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): AdministradorController->run()
+#3 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:48:48 [error] [php] Undefined variable: cantidad_meses (/var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php:29)
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/CController.php(286): AdministradorController->runAction()
+#1 /var/www/Estacionamiento/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#2 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): AdministradorController->run()
+#3 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:48:50 [error] [php] Undefined variable: cantidad_meses (/var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php:29)
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/CController.php(286): AdministradorController->runAction()
+#1 /var/www/Estacionamiento/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#2 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): AdministradorController->run()
+#3 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:49:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.contratos' doesn't exist. The SQL statement executed was: INSERT INTO contratos(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('10/12/2014','01','1','2','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:49:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.contratos' doesn't exist. The SQL statement executed was: INSERT INTO contratos(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('10/12/2014','01','1','2','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('10/12/2014', '01', '1', '2', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:49:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.contratos' doesn't exist. The SQL statement executed was: INSERT INTO contratos(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('10/12/2014','01','1','2','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:49:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'miraflorespark.contratos' doesn't exist. The SQL statement executed was: INSERT INTO contratos(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('10/12/2014','01','1','2','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('10/12/2014', '01', '1', '2', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:49:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('10/12/2014','01','1','2','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:49:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('10/12/2014','01','1','2','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('10/12/2014', '01', '1', '2', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:49:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('10/12/2014','01','1','2','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 02:49:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('10/12/2014','01','1','2','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('10/12/2014', '01', '1', '2', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 02:53:32 [error] [exception.CException] exception 'CException' with message 'Property "RegistraContrato.sex" is not defined.' in /var/www/Estacionamiento/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(2529): CComponent->__get('sex')
+#1 /var/www/Estacionamiento/framework/web/helpers/CHtml.php(1802): CHtml::resolveValue(Object(RegistraContrato), 'sex')
+#2 /var/www/Estacionamiento/framework/web/widgets/CActiveForm.php(847): CHtml::activeDropDownList(Object(RegistraContrato), 'sex', Array, Array)
+#3 /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php(41): CActiveForm->dropDownList(Object(RegistraContrato), 'sex', Array)
+#4 /var/www/Estacionamiento/framework/web/CBaseController.php(126): require('/var/www/Estaci...')
+#5 /var/www/Estacionamiento/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/Estaci...', Array, true)
+#6 /var/www/Estacionamiento/framework/web/CController.php(869): CBaseController->renderFile('/var/www/Estaci...', Array, true)
+#7 /var/www/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(41): CController->render('index', Array)
+#9 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#10 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#15 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:16:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','1','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 03:16:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','1','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('2014-12-19', '2', '1', '1', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:16:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','1','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 03:16:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','1','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('2014-12-19', '2', '1', '1', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:16:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','2','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 03:16:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','2','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('2014-12-19', '2', '1', '2', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:17:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','2','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 03:17:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','2','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('2014-12-19', '2', '1', '2', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:22:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','2','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 03:22:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014-12-19','2','1','2','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('2014-12-19', '2', '1', '2', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:22:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014/12/19','2','1','1','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 03:22:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014/12/19','2','1','1','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('2014/12/19', '2', '1', '1', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:22:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014/12/19','2','1','1','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 03:22:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014/12/19','2','1','1','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('2014/12/19', '2', '1', '1', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:22:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014/12/19','2','1','1','1').
+in /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php (14)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (29)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 03:22:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`miraflorespark`.`contrato`, CONSTRAINT `fk_contrato_cliente1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO contrato(fecha,cantidad_meses,id_cliente,id_tarifa,id_tarjeta) VALUES ('2014/12/19','2','1','1','1')' in /var/www/Estacionamiento/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/Estacionamiento/miraflorespark/protected/models/ConsultasDB.php(14): CDbCommand->execute()
+#1 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(29): ConsultasDB->inserta_contratos('2014/12/19', '2', '1', '1', '1')
+#2 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#3 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/i...')
+#8 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+HTTP_REFERER=http://localhost/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 03:24:41 [error] [php] Undefined variable: msg (/var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php:16)
+Stack trace:
+#0 /var/www/Estacionamiento/framework/web/CController.php(869): AdministradorController->renderFile()
+#1 /var/www/Estacionamiento/framework/web/CController.php(782): AdministradorController->renderPartial()
+#2 /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(41): AdministradorController->render()
+#3 /var/www/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionIndex()
+#4 /var/www/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/Estacionamiento/framework/web/CController.php(286): AdministradorController->runAction()
+#6 /var/www/Estacionamiento/framework/web/CController.php(265): AdministradorController->runActionWithFilters()
+#7 /var/www/Estacionamiento/framework/web/CWebApplication.php(282): AdministradorController->run()
+#8 /var/www/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/index
+in /var/www/Estacionamiento/miraflorespark/protected/views/administrador/index.php (16)
+in /var/www/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php (41)
+in /var/www/Estacionamiento/miraflorespark/index.php (13)
