@@ -32,21 +32,21 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_marca'); ?>
-		<?php echo $form->textField($model,'id_marca'); ?>
-		<?php echo $form->error($model,'id_marca'); ?>
+		<?php echo $form->labelEx($model,'modelo'); ?>
+		<?php echo $form->textField($model,'modelo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'modelo'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_tipo'); ?>
-		<?php echo $form->textField($model,'id_tipo'); ?>
-		<?php echo $form->error($model,'id_tipo'); ?>
+		<?php echo $form->labelEx($model,'condicion'); ?>
+		<?php echo $form->textField($model,'condicion',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'condicion'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_conductor'); ?>
-		<?php echo $form->textField($model,'id_conductor'); ?>
-		<?php echo $form->error($model,'id_conductor'); ?>
+		<?php echo $form->labelEx($model,'id_tarjeta'); ?>
+		<?php echo $form->textField($model,'id_tarjeta'); ?>
+		<?php echo $form->error($model,'id_tarjeta'); ?>
 	</div>
 
 	<div class="row buttons">

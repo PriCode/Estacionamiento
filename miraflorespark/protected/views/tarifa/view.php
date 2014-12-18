@@ -22,7 +22,8 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_tarifa',
-		'tarifa',
-		'id_tipo',
+		'por_minuto',
+		'por_mes',
+		'tipo_cliente',
 	),
 )); ?>

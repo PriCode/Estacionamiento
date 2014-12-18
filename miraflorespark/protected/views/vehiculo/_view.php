@@ -17,16 +17,16 @@
 	<?php echo CHtml::encode($data->color); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_marca')); ?>:</b>
-	<?php echo CHtml::encode($data->id_marca); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('modelo')); ?>:</b>
+	<?php echo CHtml::encode($data->modelo); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_tipo')); ?>:</b>
-	<?php echo CHtml::encode($data->id_tipo); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('condicion')); ?>:</b>
+	<?php echo CHtml::encode($data->condicion); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_conductor')); ?>:</b>
-	<?php echo CHtml::encode($data->id_conductor); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('id_tarjeta')); ?>:</b>
+	<?php echo CHtml::encode($data->id_tarjeta); ?>
 	<br />
 
 

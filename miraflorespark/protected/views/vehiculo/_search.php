@@ -27,18 +27,18 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'id_marca'); ?>
-		<?php echo $form->textField($model,'id_marca'); ?>
+		<?php echo $form->label($model,'modelo'); ?>
+		<?php echo $form->textField($model,'modelo',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'id_tipo'); ?>
-		<?php echo $form->textField($model,'id_tipo'); ?>
+		<?php echo $form->label($model,'condicion'); ?>
+		<?php echo $form->textField($model,'condicion',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'id_conductor'); ?>
-		<?php echo $form->textField($model,'id_conductor'); ?>
+		<?php echo $form->label($model,'id_tarjeta'); ?>
+		<?php echo $form->textField($model,'id_tarjeta'); ?>
 	</div>
 
 	<div class="row buttons">

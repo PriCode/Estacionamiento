@@ -17,13 +17,18 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'tarifa'); ?>
-		<?php echo $form->textField($model,'tarifa'); ?>
+		<?php echo $form->label($model,'por_minuto'); ?>
+		<?php echo $form->textField($model,'por_minuto',array('size'=>5,'maxlength'=>5)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'id_tipo'); ?>
-		<?php echo $form->textField($model,'id_tipo'); ?>
+		<?php echo $form->label($model,'por_mes'); ?>
+		<?php echo $form->textField($model,'por_mes',array('size'=>5,'maxlength'=>5)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'tipo_cliente'); ?>
+		<?php echo $form->textField($model,'tipo_cliente',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row buttons">

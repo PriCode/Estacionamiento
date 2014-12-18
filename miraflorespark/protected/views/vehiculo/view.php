@@ -24,8 +24,8 @@ $this->menu=array(
 		'id_vehiculo',
 		'placa',
 		'color',
-		'id_marca',
-		'id_tipo',
-		'id_conductor',
+		'modelo',
+		'condicion',
+		'id_tarjeta',
 	),
 )); ?>

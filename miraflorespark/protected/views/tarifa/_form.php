@@ -20,15 +20,21 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'tarifa'); ?>
-		<?php echo $form->textField($model,'tarifa'); ?>
-		<?php echo $form->error($model,'tarifa'); ?>
+		<?php echo $form->labelEx($model,'por_minuto'); ?>
+		<?php echo $form->textField($model,'por_minuto',array('size'=>5,'maxlength'=>5)); ?>
+		<?php echo $form->error($model,'por_minuto'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_tipo'); ?>
-		<?php echo $form->textField($model,'id_tipo'); ?>
-		<?php echo $form->error($model,'id_tipo'); ?>
+		<?php echo $form->labelEx($model,'por_mes'); ?>
+		<?php echo $form->textField($model,'por_mes',array('size'=>5,'maxlength'=>5)); ?>
+		<?php echo $form->error($model,'por_mes'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'tipo_cliente'); ?>
+		<?php echo $form->textField($model,'tipo_cliente',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'tipo_cliente'); ?>
 	</div>
 
 	<div class="row buttons">
