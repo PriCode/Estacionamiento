@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84b25ee8-f8a0-4c11-a007-a8eb5875f9a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Estacionamiento.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miraflorespark/protected/models/RegistraTarifa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miraflorespark/protected/views/administrador/tarifa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miraflorespark/protected/controllers/AdministradorController.php" afterPath="$PROJECT_DIR$/miraflorespark/protected/controllers/AdministradorController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miraflorespark/protected/models/ConsultasDB.php" afterPath="$PROJECT_DIR$/miraflorespark/protected/models/ConsultasDB.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miraflorespark/protected/runtime/application.log" afterPath="$PROJECT_DIR$/miraflorespark/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miraflorespark/protected/config/main.php" afterPath="$PROJECT_DIR$/miraflorespark/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miraflorespark/protected/views/administrador/tarifas.php" afterPath="$PROJECT_DIR$/miraflorespark/protected/views/administrador/tarifas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miraflorespark/protected/views/administrador/index.php" afterPath="$PROJECT_DIR$/miraflorespark/protected/views/administrador/index.php" />
     </list>
     <ignored path="Estacionamiento.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,17 +51,17 @@
       <file leaf-file-name="AdministradorController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miraflorespark/protected/controllers/AdministradorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.076923" vertical-offset="1033" max-vertical-offset="1836">
+            <state vertical-scroll-proportion="-60.307693" vertical-offset="13" max-vertical-offset="1836">
               <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsultasDB.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConsultasDB.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miraflorespark/protected/models/ConsultasDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29166666" vertical-offset="0" max-vertical-offset="816">
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="629">
               <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
                 <marker date="1418941738802" expanded="true" signature="215:289" placeholder="INSERT INTO ..." />
@@ -103,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/miraflorespark/protected/views/administrador/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="187" max-vertical-offset="1921">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.104166664" vertical-offset="0" max-vertical-offset="1921">
+              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -131,6 +120,7 @@
         <option value="$PROJECT_DIR$/miraflorespark/protected/views/administrador/tarifas.php" />
         <option value="$PROJECT_DIR$/miraflorespark/protected/controllers/AdministradorController.php" />
         <option value="$PROJECT_DIR$/miraflorespark/protected/models/ConsultasDB.php" />
+        <option value="$PROJECT_DIR$/miraflorespark/protected/views/administrador/index.php" />
       </list>
     </option>
   </component>
@@ -398,26 +388,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/miraflorespark/protected/views/administrador/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="187" max-vertical-offset="1921">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miraflorespark/protected/views/administrador/tarifas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.115385" vertical-offset="51" max-vertical-offset="1122">
           <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miraflorespark/protected/views/administrador/tarifa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -446,23 +420,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miraflorespark/protected/controllers/AdministradorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.076923" vertical-offset="1033" max-vertical-offset="1836">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miraflorespark/protected/models/ConsultasDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29166666" vertical-offset="0" max-vertical-offset="816">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="629">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
             <marker date="1418941738802" expanded="true" signature="215:289" placeholder="INSERT INTO ..." />
             <marker date="1418941738802" expanded="true" signature="215:289" placeholder="INSERT INTO ..." />
             <marker date="1418941738802" expanded="true" signature="668:719" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miraflorespark/protected/controllers/AdministradorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-60.307693" vertical-offset="13" max-vertical-offset="1836">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miraflorespark/protected/views/administrador/tarifa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miraflorespark/protected/views/administrador/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.104166664" vertical-offset="0" max-vertical-offset="1921">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>

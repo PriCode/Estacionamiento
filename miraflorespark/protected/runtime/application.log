@@ -445,3 +445,25 @@ REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/tarifa
 in C:\xampp\htdocs\Estacionamiento\miraflorespark\protected\models\ConsultasDB.php (19)
 in C:\xampp\htdocs\Estacionamiento\miraflorespark\protected\controllers\AdministradorController.php (82)
 in C:\xampp\htdocs\Estacionamiento\miraflorespark\index.php (13)
+2014/12/18 23:45:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gtarifas".' in C:\xampp\htdocs\Estacionamiento\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Estacionamiento\framework\web\CController.php(270): CController->missingAction('gtarifas')
+#1 C:\xampp\htdocs\Estacionamiento\framework\web\CWebApplication.php(282): CController->run('gtarifas')
+#2 C:\xampp\htdocs\Estacionamiento\framework\web\CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#3 C:\xampp\htdocs\Estacionamiento\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Estacionamiento\miraflorespark\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gtarifas
+HTTP_REFERER=http://localhost:8080/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 23:46:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gtarifas".' in C:\xampp\htdocs\Estacionamiento\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Estacionamiento\framework\web\CController.php(270): CController->missingAction('gtarifas')
+#1 C:\xampp\htdocs\Estacionamiento\framework\web\CWebApplication.php(282): CController->run('gtarifas')
+#2 C:\xampp\htdocs\Estacionamiento\framework\web\CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#3 C:\xampp\htdocs\Estacionamiento\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Estacionamiento\miraflorespark\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gtarifas
+HTTP_REFERER=http://localhost:8080/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
