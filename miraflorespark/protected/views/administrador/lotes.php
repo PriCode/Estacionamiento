@@ -8,7 +8,7 @@
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),
     	)
-     ?>
+     ?> 
 
 <legend>Lotes</legend>
 

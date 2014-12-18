@@ -1,15 +1,16 @@
+<?php
+/* @var $this UsuariosController */
+/* @var $model Usuarios */
 
-    <?php $this->menu=array(
-	    array('label' => 'Panel de Control'),	    
-	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
-	    array('label' => 'Clientes', 'url' => '?r=administrador/gclientes','active' => true),
-	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
-	    array('label' => 'Lotes', 'url' => '?r=administrador/glotes'),	    
-	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
-	    TbHtml::menuDivider(),
-	    array('label' => 'Ayuda', 'url' => '#'),
-    	)
-     ?>
+$this->breadcrumbs=array(
+	'Usuarioses'=>array('index'),
+	'Manage',
+);
+
+$this->menu=array(
+	array('label'=>'List Usuarios', 'url'=>array('index')),
+	array('label'=>'Create Usuarios', 'url'=>array('create')),
+);
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -17,7 +18,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#cliente-grid').yiiGridView('update', {
+	$('#usuarios-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -25,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Clientes</h1>
+<h1>Manage Usuarioses</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -40,16 +41,13 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'cliente-grid',
+	'id'=>'usuarios-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id_cliente',
+		'id_usuarios',
+		'tipo',
 		'nombre',
-		'ape_materno',
-		'ape_paterno',
-		'tipo_persona',
-		'direccion',
 		array(
 			'class'=>'CButtonColumn',
 		),

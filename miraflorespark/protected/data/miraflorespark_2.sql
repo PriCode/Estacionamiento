@@ -184,6 +184,19 @@ CREATE INDEX `fk_contrato_vehiculo_contrato1_idx` ON `miraflorespark`.`contrato_
 CREATE INDEX `fk_contrato_vehiculo_vehiculo1_idx` ON `miraflorespark`.`contrato_vehiculo` (`id_vehiculo` ASC);
 
 
+-- -----------------------------------------------------
+-- Table `miraflorespark`.`usuarios`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `miraflorespark`.`usuarios` ;
+
+CREATE TABLE IF NOT EXISTS `miraflorespark`.`usuarios` (
+  `id_usuarios` INT NOT NULL,
+  `tipo` VARCHAR(45) NULL,
+  `nombre` VARCHAR(45) NULL,
+  PRIMARY KEY (`id_usuarios`))
+ENGINE = InnoDB;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

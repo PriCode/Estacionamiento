@@ -17,20 +17,13 @@ class PorteroController extends Controller
 	public function actionRegistro()
 	{
 
+		$this->render('index');	
+	}
 
+	public function actionSalida()
+	{
 
-
-		 if(isset($_POST))
-		  {
-		
-		    	$rpta="se registro!";
-		  }else{
-
-
-
-		    }
-
-		$this->render('index',array("respuesta"=>$rpta));	
+		$this->render('salida');	
 	}
 
 
