@@ -12,3 +12,35 @@ Stack trace:
 REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
 in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (20)
 in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
+2014/12/18 00:58:28 [error] [exception.CException] exception 'CException' with message 'AdministradorController cannot find the requested view "administrador".' in /home/vagrant/uni/Estacionamiento/framework/web/CController.php:878
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('administrador', Array, true)
+#1 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(18): CController->render('administrador', Array)
+#2 /home/vagrant/uni/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#7 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#8 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+HTTP_REFERER=http://uni.dev/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---
+2014/12/18 00:59:16 [error] [exception.CException] exception 'CException' with message 'AdministradorController cannot find the requested view "administrador".' in /home/vagrant/uni/Estacionamiento/framework/web/CController.php:878
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(782): CController->renderPartial('administrador', Array, true)
+#1 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/AdministradorController.php(18): CController->render('administrador', Array)
+#2 /home/vagrant/uni/Estacionamiento/framework/web/actions/CInlineAction.php(49): AdministradorController->actionGclientes()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): CController->run('gclientes')
+#7 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController('administrador/g...')
+#8 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=administrador/gclientes
+HTTP_REFERER=http://uni.dev/Estacionamiento/miraflorespark/index.php?r=administrador/index
+---

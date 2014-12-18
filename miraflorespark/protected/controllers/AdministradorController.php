@@ -8,18 +8,39 @@ class AdministradorController extends Controller
 	public function actionIndex()
 	{
 
-		$valor="textotextotextotextotextotextotextotextotextotextotextotextotexto";
-
-
-		$this->render('index',array("valor" =>$valor));
+		$this->render('index');
 	}
+	
+
 	public function actionGclientes(){
-		if 
 
-		$this->render('administrador', array('view'=>''));
+		$this->render('clientes');			
+				
+		
+	}
+
+	public function actionGlotes(){
+				$this->render('lotes');			
+						
+
+	}
+
+	public function actionGreportes(){
+		$this->render('reportes');			
+		
+				
 
 
 	}
+	public function actionGtarifas(){
+			$this->render('tarifas');			
+
+	}
+
+
+
+
+
 
 
 }

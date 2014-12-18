@@ -36,9 +36,7 @@
 				array('label'=>'Administrador', 'url'=>array('/administrador/index'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Portero', 'url'=>array('/portero/index'),'visible'=>!Yii::app()->user->isGuest),				
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about'),'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Contact', 'url'=>array('/site/contact'),'visible'=>Yii::app()->user->isGuest),
-
-				
+				array('label'=>'Contact', 'url'=>array('/site/contact'),'visible'=>Yii::app()->user->isGuest),			
 
 			),
 		)); ?>
