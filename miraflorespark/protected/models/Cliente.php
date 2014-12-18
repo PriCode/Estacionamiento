@@ -16,6 +16,10 @@
  */
 class Cliente extends CActiveRecord
 {
+
+	const PERSONA_NATURAL=0;
+	const PERSONA_JURIDICA=1;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -108,4 +112,15 @@ class Cliente extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+
+	public function getTypePerson(){
+
+		return array(   'none'=>' ',
+					 	self::PERSONA_NATURAL=>'Natural', 
+						self::PERSONA_JURIDICA=>'Juridica'
+					);
+	}
+
+
 }

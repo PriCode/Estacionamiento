@@ -17,8 +17,8 @@ class PorteroController extends Controller
 	public function actionRegistro()
 	{
 
-		$model= new Visita;					
-		print_r($_POST);
+
+
 
 		 if(isset($_POST))
 		  {

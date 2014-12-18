@@ -44,9 +44,12 @@
 	</div>
 
 	<div class="row">
+
 		<?php echo $form->labelEx($model,'tipo_persona'); ?>
-		<?php echo $form->textField($model,'tipo_persona',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->dropDownList($model,'tipo_persona', $model->getTypePerson()); ?>
 		<?php echo $form->error($model,'tipo_persona'); ?>
+
+
 	</div>
 
 	<div class="row">

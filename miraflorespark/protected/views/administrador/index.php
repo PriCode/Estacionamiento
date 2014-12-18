@@ -2,9 +2,10 @@
     <?php $this->menu=array(
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '#', 'active' => true),
+	    array('label' => 'Clientes', 'url' => '?r=administrador/gclientes'),
 	    array('label' => 'Tarifa', 'url' => '#'),    
 	    array('label' => 'Lotes', 'url' => '#'),
-	    array('label' => 'Reporte', 'url' => '#'),
+	    array('label' => 'Reportes', 'url' => '#'),
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),
     	)

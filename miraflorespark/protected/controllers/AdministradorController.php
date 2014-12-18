@@ -13,5 +13,13 @@ class AdministradorController extends Controller
 
 		$this->render('index',array("valor" =>$valor));
 	}
+	public function actionGclientes(){
+		if 
+
+		$this->render('administrador', array('view'=>''));
+
+
+	}
+
 
 }

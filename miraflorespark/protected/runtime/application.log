@@ -1,0 +1,14 @@
+2014/12/17 22:27:44 [error] [php] include(Visita.php): failed to open stream: No such file or directory (/home/vagrant/uni/Estacionamiento/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php(20): spl_autoload_call()
+#1 /home/vagrant/uni/Estacionamiento/framework/web/actions/CInlineAction.php(49): PorteroController->actionRegistro()
+#2 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(286): PorteroController->runAction()
+#4 /home/vagrant/uni/Estacionamiento/framework/web/CController.php(265): PorteroController->runActionWithFilters()
+#5 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(282): PorteroController->run()
+#6 /home/vagrant/uni/Estacionamiento/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/vagrant/uni/Estacionamiento/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/vagrant/uni/Estacionamiento/miraflorespark/index.php(13): CWebApplication->run()
+REQUEST_URI=/Estacionamiento/miraflorespark/index.php?r=portero/Registro
+in /home/vagrant/uni/Estacionamiento/miraflorespark/protected/controllers/PorteroController.php (20)
+in /home/vagrant/uni/Estacionamiento/miraflorespark/index.php (13)
