@@ -39,6 +39,7 @@
 	    <?php // echo TbHtml::checkBox('checkMeOut', false, array('label' => 'Check me out')); ?>
 	    <?php echo TbHtml::submitButton('Registrar'); ?>	    
 
+            <?php echo CHtml::submitButton('Registrar2',array('class'=>'btn btn-primary'));?>
 	    
 	    <?php /*echo TbHtml::checkBoxControlGroup('rememberMe', false, array(
 	    'label' => 'Remember me',
