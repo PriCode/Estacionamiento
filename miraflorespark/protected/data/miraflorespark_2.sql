@@ -193,6 +193,7 @@ CREATE TABLE IF NOT EXISTS `miraflorespark`.`usuarios` (
   `id_usuarios` INT NOT NULL AUTO_INCREMENT,
   `tipo` VARCHAR(45) NULL,
   `nombre` VARCHAR(45) NULL,
+  `password` VARCHAR(100) NULL,
   PRIMARY KEY (`id_usuarios`))
 ENGINE = InnoDB;
 
@@ -215,7 +216,7 @@ INSERT INTO `cliente`(`nombre`, `ape_materno`, `ape_paterno`, `tipo_persona`, `d
 
 INSERT INTO `cliente`(`nombre`, `ape_materno`, `ape_paterno`, `tipo_persona`, `direccion`) VALUES ('Diana','Suarez','Diman','Juridica','Av Los Javier Prado');
 
-
+INSERT INTO `miraflorespark`.`usuarios` (`id_usuarios`, `tipo`, `nombre`,`password`) VALUES (NULL, 'admin', 'admin', MD5('admin')), (NULL, 'demo', 'demo' ,MD5('demo'));
 
 
 

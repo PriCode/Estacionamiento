@@ -39,6 +39,7 @@ return array(
 			// enable cookie-based authentication
 			'class'=>'WebUser',
 			'allowAutoLogin'=>true,
+						
 			),
 		'bootstrap' => array(
 		 'class' => 'bootstrap.components.TbApi'),
