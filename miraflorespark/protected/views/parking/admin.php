@@ -3,13 +3,13 @@
 /* @var $model Parking */
 
 $this->breadcrumbs=array(
-	'Parkings'=>array('index'),
-	'Manage',
+	'Lotes'=>'#',
+	'Gestion',
 );
 
-$this->menu=array(
-	array('label'=>'List Parking', 'url'=>array('index')),
-	array('label'=>'Create Parking', 'url'=>array('create')),
+$this->menu2=array(
+	array('label'=>'Lista Completa', 'url'=>array('index')),
+	array('label'=>'Crear Lotes', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -25,15 +25,22 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
+<?php $this->menu=array(
+	    array('label' => 'Panel de Control'),	    
+	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
+	    array('label' => 'Clientes', 'url' => '?r=cliente/admin'),
+	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
+	    array('label' => 'Lotes', 'url' => '?r=parking/admin', 'active' => true),
+	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
+	    TbHtml::menuDivider(),
+	    array('label' => 'Ayuda', 'url' => '#'),
+    	)
+  ?>
 
-<h1>Manage Parkings</h1>
+<h1>Gestion de Lotes</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('Busqueda Avanzada','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,

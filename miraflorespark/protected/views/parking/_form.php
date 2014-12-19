@@ -3,7 +3,18 @@
 /* @var $model Parking */
 /* @var $form CActiveForm */
 ?>
-
+<?php $this->menu=array(
+	    array('label' => 'Panel de Control'),	    
+	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
+	    array('label' => 'Clientes', 'url' => '?r=cliente/admin'),
+	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
+	    array('label' => 'Lotes', 'url' => '?r=parking/admin', 'active' => true),
+	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
+	    TbHtml::menuDivider(),
+	    array('label' => 'Ayuda', 'url' => '#'),
+    	)
+  ?>
+  
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -33,7 +44,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->textField($model,'estado',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->dropDownList($model,'estado', $model->getStateParking()); ?>
 		<?php echo $form->error($model,'estado'); ?>
 	</div>
 

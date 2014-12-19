@@ -7,12 +7,15 @@
  * @property integer $id_usuarios
  * @property string $tipo
  * @property string $nombre
+ * @property string $password
  */
 class Usuarios extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
+
+	
 	public function tableName()
 	{
 		return 'usuarios';
@@ -26,12 +29,12 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_usuarios', 'required'),
+			array('id_usuarios, password', 'required'),
 			array('id_usuarios', 'numerical', 'integerOnly'=>true),
-			array('tipo, nombre', 'length', 'max'=>45),
+			array('tipo, nombre, password', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_usuarios, tipo, nombre', 'safe', 'on'=>'search'),
+			array('id_usuarios, tipo, nombre, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,6 +58,7 @@ class Usuarios extends CActiveRecord
 			'id_usuarios' => 'Id Usuarios',
 			'tipo' => 'Tipo',
 			'nombre' => 'Nombre',
+			'password' => 'Password',
 		);
 	}
 
@@ -76,9 +80,10 @@ class Usuarios extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id_usuarios',$this->id_usuarios);
+		//$criteria->compare('id_usuarios',$this->id_usuarios);
 		$criteria->compare('tipo',$this->tipo,true);
 		$criteria->compare('nombre',$this->nombre,true);
+		//$criteria->compare('password',$this->password,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -95,4 +100,16 @@ class Usuarios extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+
+	public function validatePassword($password)
+	 {
+	     return $this->hashPassword($password)===$this->password;
+	 }
+	 
+	 public function hashPassword($password)
+	 {
+	     return md5($password);
+	 }
+
 }

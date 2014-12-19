@@ -200,23 +200,3 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-
-INSERT INTO `cliente`(`nombre`, `ape_materno`, `ape_paterno`, `tipo_persona`, `direccion`) VALUES ('Carlos','Cardenas','Paredes','Natural','Av. Los pinos');
-
-INSERT INTO `cliente`(`nombre`, `ape_materno`, `ape_paterno`, `tipo_persona`, `direccion`) VALUES ('Mariano','Rioja','Pascual','Natural','Jr las palmeras');
-
-
-INSERT INTO `cliente`(`nombre`, `ape_materno`, `ape_paterno`, `tipo_persona`, `direccion`) VALUES ('Jorge','Miranda','Diman','Natural','Calle las plantanos');
-
-
-INSERT INTO `cliente`(`nombre`, `ape_materno`, `ape_paterno`, `tipo_persona`, `direccion`) VALUES ('Ana','Rivales','Liberales','Natural','Jr los planetas');
-
-
-INSERT INTO `cliente`(`nombre`, `ape_materno`, `ape_paterno`, `tipo_persona`, `direccion`) VALUES ('Diana','Suarez','Diman','Juridica','Av Los Javier Prado');
-
-
-
-
-
-

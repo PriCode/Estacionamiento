@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu2=array(
-	array('label'=>'List Cliente', 'url'=>array('index')),
-	array('label'=>'Create Cliente', 'url'=>array('create')),
-	array('label'=>'Update Cliente', 'url'=>array('update', 'id'=>$model->id_cliente)),
-	array('label'=>'Delete Cliente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_cliente),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Cliente', 'url'=>array('admin')),
+	array('label'=>'Lista Completa', 'url'=>array('index')),
+	array('label'=>'Nuevo Cliente', 'url'=>array('create')),
+	array('label'=>'Actualizar Cliente', 'url'=>array('update', 'id'=>$model->id_cliente)),
+	array('label'=>'Borrar Cliente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_cliente),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Gestionar Clientes', 'url'=>array('admin')),
 );
 ?>
 
@@ -22,14 +22,14 @@ $this->menu2=array(
 	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
 	    array('label' => 'Clientes', 'url' => '?r=cliente/admin', 'active' => true),
 	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
-	    array('label' => 'Lotes', 'url' => '?r=administrador/glotes'),
+	    array('label' => 'Lotes', 'url' => '?r=parking/admin'),
 	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),
     	)
      ?>
 
-<h1>View Cliente #<?php echo $model->id_cliente; ?></h1>
+<h3>Vista Cliente #<?php echo $model->id_cliente; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

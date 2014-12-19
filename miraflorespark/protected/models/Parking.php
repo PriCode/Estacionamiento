@@ -17,6 +17,10 @@ class Parking extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+	
+	const PARKING_LIBRE='Libre';
+	const PARKING_OCUPADO='Ocupado';
+
 	public function tableName()
 	{
 		return 'parking';
@@ -102,4 +106,11 @@ class Parking extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getStateParking(){
+		return array (self::PARKING_LIBRE=>'Libre', 
+					 self::PARKING_OCUPADO=>'Ocupado');	
+	}
+
+
 }

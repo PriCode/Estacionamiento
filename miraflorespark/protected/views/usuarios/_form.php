@@ -37,6 +37,12 @@
 		<?php echo $form->error($model,'nombre'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'password'); ?>
+		<?php echo $form->passwordField($model,'password',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'password'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

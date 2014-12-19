@@ -17,8 +17,8 @@
 class Cliente extends CActiveRecord
 {
 
-	const PERSONA_NATURAL=0;
-	const PERSONA_JURIDICA=1;
+	const PERSONA_NATURAL='Natural';
+	const PERSONA_JURIDICA='Juridica';
 
 	/**
 	 * @return string the associated database table name
@@ -36,7 +36,12 @@ class Cliente extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_cliente', 'required'),
+			//array('id_cliente'),
+			array('nombre', 'required'),
+			array('ape_paterno', 'required'),
+			array('ape_materno', 'required'),
+			array('tipo_persona', 'required'),
+
 			array('id_cliente', 'numerical', 'integerOnly'=>true),
 			array('nombre, ape_materno, ape_paterno, tipo_persona, direccion', 'length', 'max'=>45),
 			// The following rule is used by search().

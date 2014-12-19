@@ -17,5 +17,9 @@
 	<?php echo CHtml::encode($data->nombre); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
+	<?php echo CHtml::encode($data->password); ?>
+	<br />
+
 
 </div>

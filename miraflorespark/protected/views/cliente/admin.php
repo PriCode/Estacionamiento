@@ -2,10 +2,15 @@
 /* @var $this ClienteController */
 /* @var $model Cliente */
 
+$this->breadcrumbs=array(
+	'Clientes'=>'#',
+	'Gestion',
+);
+
+
 $this->menu2=array(
-	array('label'=>'List Cliente', 'url'=>array('index')),
-	array('label'=>'Create Cliente', 'url'=>array('create')),		
-	array('label'=>'View Cliente', 'url'=>array('view', 'id'=>$model->id_cliente)),	
+	array('label'=>'Lista Completa', 'url'=>array('index')),
+	array('label'=>'Nuevo Cliente', 'url'=>array('create')),		
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -28,7 +33,7 @@ $('.search-form form').submit(function(){
 	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
 	    array('label' => 'Clientes', 'url' => '?r=cliente/admin', 'active' => true),
 	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
-	    array('label' => 'Lotes', 'url' => '?r=administrador/glotes'),
+	    array('label' => 'Lotes', 'url' => '?r=parking/admin'),
 	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),
@@ -36,9 +41,10 @@ $('.search-form form').submit(function(){
      ?>
 
 <h1>Gestion de Clientes</h1>
+<h5>Clientes activos</h5>
 
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('Busqueda Avanzada','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -50,7 +56,7 @@ $('.search-form form').submit(function(){
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id_cliente',
+		//'id_cliente',
 		'nombre',
 		'ape_materno',
 		'ape_paterno',
