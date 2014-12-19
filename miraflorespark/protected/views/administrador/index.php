@@ -3,8 +3,11 @@
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '?r=administrador/index', 'active' => true),
 	    array('label' => 'Clientes', 'url' => '?r=cliente/admin'),
-	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
+
+	    array('label' => 'Tarifa', 'url' => '?r=administrador/tarifa'),
+	    
 	    array('label' => 'Lotes', 'url' => '?r=parking/admin'),
+
 	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),

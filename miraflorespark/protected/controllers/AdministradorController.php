@@ -59,8 +59,37 @@ class AdministradorController extends Controller
 
 
 	}
-	public function actionGtarifas(){
-			$this->render('tarifas');			
+	public function actionTarifa(){
+
+        $model = new RegistraTarifa;
+        $msg = '';
+        if(isset($_POST['ajax']) && $_POST['ajax'] == 'form')
+        {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+
+
+        if(isset($_POST['RegistraTarifa']))
+        {
+            $model->attributes = $_POST['RegistraTarifa'];
+            if(!$model->validate())
+            {
+                $model->addError('modelo','Error al enviar el formulario');
+            }else
+            {
+                $insertar = new ConsultasDB;
+                $insertar->inserta_tarifa($model->por_minuto,$model->por_mes,$model->tipo_cliente);
+
+
+                $model->por_minuto='';
+                $model->por_mes='';
+                $model->tipo_cliente='';
+                $msg = 'Se generó correctamente el contrato';
+            }
+        }
+
+        $this->render('tarifa',array('model'=>$model,'msg'=>$msg));
 
 	}
 
