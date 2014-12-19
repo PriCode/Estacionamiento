@@ -66,8 +66,8 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=miraflorespark',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			//'password' => '.-dogzilla.-',
-            'password' => '',
+			'password' => '.-dogzilla.-',
+            //'password' => '',
 			'charset' => 'utf8',
 		),
 		

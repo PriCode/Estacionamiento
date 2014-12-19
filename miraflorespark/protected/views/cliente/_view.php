@@ -7,13 +7,8 @@
 	    array('label' => 'Panel de Control'),	    
 	    array('label' => 'Contratos', 'url' => '?r=administrador/index'),
 	    array('label' => 'Clientes', 'url' => '?r=cliente/admin', 'active' => true),
-<<<<<<< HEAD
-	    array('label' => 'Tarifa', 'url' => '?r=administrador/gtarifas'),    
+	   array('label' => 'Tarifa', 'url' => '?r=administrador/tarifa'),	   
 	    array('label' => 'Lotes', 'url' => '?r=parking/admin'),
-=======
-	    array('label' => 'Tarifa', 'url' => '?r=administrador/tarifa'),
-	    array('label' => 'Lotes', 'url' => '?r=administrador/glotes'),
->>>>>>> 179b2b1d18ef30a12e3e10191ddfad957d32c0bf
 	    array('label' => 'Reportes', 'url' => '?r=administrador/greportes'),
 	    TbHtml::menuDivider(),
 	    array('label' => 'Ayuda', 'url' => '#'),
