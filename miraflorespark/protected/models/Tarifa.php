@@ -5,8 +5,9 @@
  *
  * The followings are the available columns in table 'tarifa':
  * @property integer $id_tarifa
- * @property double $tarifa
- * @property integer $id_tipo
+ * @property double $por_minuto
+ * @property double $por_mes
+ * @property int $tipo_cliente
  *
  * The followings are the available model relations:
  * @property TipoVehiculo $idTipo
@@ -29,12 +30,11 @@ class Tarifa extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('tarifa, id_tipo', 'required'),
-			array('id_tipo', 'numerical', 'integerOnly'=>true),
-			array('tarifa', 'numerical'),
+			array('por_minuto, por_mes, tipo_cliente', 'required'),
+			array('tipo_cliente', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_tarifa, tarifa, id_tipo', 'safe', 'on'=>'search'),
+			array('id_tarifa, por_minuto, por_mes, tipo_cliente', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,7 +46,7 @@ class Tarifa extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idTipo' => array(self::BELONGS_TO, 'TipoVehiculo', 'id_tipo'),
+			'idTipo' => array(self::BELONGS_TO, 'TipoVehiculo', 'tipo_cliente'),
 		);
 	}
 
@@ -57,8 +57,9 @@ class Tarifa extends CActiveRecord
 	{
 		return array(
 			'id_tarifa' => 'Id Tarifa',
-			'tarifa' => 'Tarifa',
-			'id_tipo' => 'Id Tipo',
+			'por_minuto' => 'Por minuto',
+			'por_mes' => 'Por Mes',
+			'tipo_cliente' => 'Tipo Cliente',
 		);
 	}
 
@@ -81,8 +82,9 @@ class Tarifa extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id_tarifa',$this->id_tarifa);
-		$criteria->compare('tarifa',$this->tarifa);
-		$criteria->compare('id_tipo',$this->id_tipo);
+		$criteria->compare('por_minuto',$this->por_minuto);
+		$criteria->compare('por_mes',$this->por_mes);
+		$criteria->compare('tipo_cliente',$this->tipo_cliente);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

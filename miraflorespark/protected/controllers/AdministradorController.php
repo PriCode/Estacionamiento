@@ -31,8 +31,7 @@ class AdministradorController extends Controller
 	                        $insertar->id_cliente=$model->id_cliente;
 	                        $insertar->id_tarifa=$model->id_tarifa;
 	                        $insertar->id_tarjeta=$model->id_tarjeta;
-	                        if($insertar->save()){                       
-	                        	$insertar->save(false); 
+	                        if($insertar->save()){
 		                        $msg = '<strong class="text-info">Se generó correctamente el contrato</strong>'; 
 	                        }else{
 	                        	$msg ='<strong class="text-error"> Error al cargar los datos</strong>';
@@ -86,14 +85,20 @@ class AdministradorController extends Controller
             {
                 $model->addError('modelo','Error al enviar el formulario');
             }else
-            {
-                $insertar = new ConsultasDB;
-                $insertar->inserta_tarifa($model->por_minuto,$model->por_mes,$model->tipo_cliente);
-                $model->por_minuto='';
-                $model->por_mes='';
-                $model->tipo_cliente='';
-                $msg = '<strong class="text-info">Se generó correctamente el contrato</strong>';
-            }
+	                {	                
+	                        $insertar = new Tarifa;
+	                        $insertar->por_minuto=$model->por_minuto; 
+	                        $insertar->por_mes=$model->por_mes;
+	                        $insertar->tipo_cliente=$model->tipo_cliente;
+	                        if($insertar->save()){ 
+		                        $msg = '<strong class="text-info">Se generó correctamente el contrato</strong>'; 
+	                        }else{
+	                        	$msg ='<strong class="text-error"> Error al cargar los datos</strong>';
+	                        }
+		                    $model->por_minuto='';
+                			$model->por_mes='';
+                			$model->tipo_cliente='';
+	                }
         }
 
         $this->render('tarifa',array('model'=>$model,'msg'=>$msg));
