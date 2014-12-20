@@ -19,6 +19,8 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'bootstrap.helpers.TbHtml',
+		'bootstrap.behaviors.TbWidget',
+		'bootstrap.components.*',
 	),
 
 	'modules'=>array(

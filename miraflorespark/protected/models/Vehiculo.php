@@ -7,21 +7,24 @@
  * @property integer $id_vehiculo
  * @property string $placa
  * @property string $color
- * @property integer $id_marca
- * @property integer $id_tipo
- * @property integer $id_conductor
+ * @property string $modelo
+ * @property string $condicion
+ * @property integer $id_tarjeta
  *
  * The followings are the available model relations:
- * @property Marca $idMarca
- * @property TipoVehiculo $idTipo
- * @property Conductor $idConductor
- * @property Visita[] $visitas
+ * @property Contrato[] $contratos
+ * @property Ticket[] $tickets
+ * @property Tarjeta $idTarjeta
  */
 class Vehiculo extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
+
+	const Miembro='Miembro';
+	const nMiembro='No Miembro';
+
 	public function tableName()
 	{
 		return 'vehiculo';
@@ -35,13 +38,12 @@ class Vehiculo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_marca, id_tipo, id_conductor', 'required'),
-			array('id_marca, id_tipo, id_conductor', 'numerical', 'integerOnly'=>true),
+			array('id_tarjeta', 'numerical', 'integerOnly'=>true),
 			array('placa', 'length', 'max'=>7),
-			array('color', 'length', 'max'=>45),
+			array('color, modelo, condicion', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_vehiculo, placa, color, id_marca, id_tipo, id_conductor', 'safe', 'on'=>'search'),
+			array('id_vehiculo, placa, color, modelo, condicion, id_tarjeta', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,10 +55,9 @@ class Vehiculo extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idMarca' => array(self::BELONGS_TO, 'Marca', 'id_marca'),
-			'idTipo' => array(self::BELONGS_TO, 'TipoVehiculo', 'id_tipo'),
-			'idConductor' => array(self::BELONGS_TO, 'Conductor', 'id_conductor'),
-			'visitas' => array(self::HAS_MANY, 'Visita', 'id_vehiculo'),
+			'contratos' => array(self::MANY_MANY, 'Contrato', 'contrato_vehiculo(id_vehiculo, id_contrato)'),
+			'tickets' => array(self::HAS_MANY, 'Ticket', 'id_vehiculo'),
+			'idTarjeta' => array(self::BELONGS_TO, 'Tarjeta', 'id_tarjeta'),
 		);
 	}
 
@@ -69,9 +70,9 @@ class Vehiculo extends CActiveRecord
 			'id_vehiculo' => 'Id Vehiculo',
 			'placa' => 'Placa',
 			'color' => 'Color',
-			'id_marca' => 'Id Marca',
-			'id_tipo' => 'Id Tipo',
-			'id_conductor' => 'Id Conductor',
+			'modelo' => 'Modelo',
+			'condicion' => 'Condicion',
+			'id_tarjeta' => 'Id Tarjeta',
 		);
 	}
 
@@ -96,9 +97,9 @@ class Vehiculo extends CActiveRecord
 		$criteria->compare('id_vehiculo',$this->id_vehiculo);
 		$criteria->compare('placa',$this->placa,true);
 		$criteria->compare('color',$this->color,true);
-		$criteria->compare('id_marca',$this->id_marca);
-		$criteria->compare('id_tipo',$this->id_tipo);
-		$criteria->compare('id_conductor',$this->id_conductor);
+		$criteria->compare('modelo',$this->modelo,true);
+		$criteria->compare('condicion',$this->condicion,true);
+		$criteria->compare('id_tarjeta',$this->id_tarjeta);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -114,5 +115,15 @@ class Vehiculo extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+
+	
+	public function getCondicion(){
+
+		return array(   self::Miembro=>'Miembro', 
+						self::nMiembro=>'No Miembro'
+					,);
+
 	}
 }

@@ -170,4 +170,6 @@ class TarifaController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	
 }
