@@ -76,7 +76,7 @@
 		echo $form->labelEx($model,'id_cliente');
 		//echo $form->textField($model,'id_cliente');
 		echo $form->error($model,'id_cliente',array('class'=>'text-error'));
-		echo $form->dropDownList($model,'id_cliente',array('1'=>'cliente1','2'=>'cliente2'));
+		echo $form->dropDownList($model,'id_cliente',CHtml::listData(Cliente::model()->findAll(), 'id_cliente','nombre'));
 		?>
 	</div>
 	<div class='row'>
@@ -84,7 +84,7 @@
 		echo $form->labelEx($model,'id_tarifa');
 		//echo $form->textField($model,'id_tarifa');
 		echo $form->error($model,'id_tarifa',array('class'=>'text-error'));
-		echo $form->dropDownList($model,'id_tarifa',array('1'=>'tarifa1','2'=>'tarifa2'));
+		echo $form->dropDownList($model,'id_tarifa',CHtml::listData(Tarifa::model()->findAll(), 'id_tarifa', 'por_minuto'));
 		?>
 	</div>
 	<div class='row'>
@@ -92,7 +92,7 @@
 		echo $form->labelEx($model,'id_tarjeta');
 		//echo $form->textField($model,'id_tarjeta');
 		echo $form->error($model,'id_tarjeta',array('class'=>'text-error'));
-		echo $form->dropDownList($model,'id_tarjeta',array('1'=>'tarjeta1','2'=>'tarjeta2'));
+		echo $form->dropDownList($model,'id_tarjeta',CHtml::listData(Tarjeta::model()->findAll(), 'id_tarjeta', 'placa'));
 		?>
 	</div>
 	<div class='row'>

@@ -127,7 +127,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `miraflorespark`.`contrato` ;
 
 CREATE TABLE IF NOT EXISTS `miraflorespark`.`contrato` (
-  `id_contrato` INT NOT NULL ,
+  `id_contrato` INT NOT NULL AUTO_INCREMENT,
   `fecha` VARCHAR(45) NULL,
   `cantidad_meses` VARCHAR(45) NULL,
   `id_cliente` INT NOT NULL,

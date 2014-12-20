@@ -35,12 +35,14 @@ class Contrato extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_contrato, id_cliente, id_tarifa, id_tarjeta', 'required'),
-			array('id_contrato, id_cliente, id_tarifa, id_tarjeta', 'numerical', 'integerOnly'=>true),
+
+			//array('id_cliente, id_tarifa, id_tarjeta', 'required'),
+			array('id_cliente, id_tarifa, id_tarjeta', 'numerical', 'integerOnly'=>true),
 			array('fecha, cantidad_meses', 'length', 'max'=>45),
+			array('id_cliente, id_tarifa, id_tarjeta,fecha,cantidad_meses','required','on'=>'insert'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_contrato, fecha, cantidad_meses, id_cliente, id_tarifa, id_tarjeta', 'safe', 'on'=>'search'),
+			array('fecha, cantidad_meses, id_cliente, id_tarifa, id_tarjeta', 'safe', 'on'=>'search'),
 		);
 	}
 

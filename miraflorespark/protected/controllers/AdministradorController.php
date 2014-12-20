@@ -25,16 +25,23 @@ class AdministradorController extends Controller
 	                        $model->addError('modelo','Error al enviar el formulario');       
 	                }else
 	                {	                
-	                        $insertar = new ConsultasDB;
-	                        $insertar->inserta_contratos($model->fecha, $model->cantidad_meses,$model->id_cliente, $model->id_tarifa, $model->id_tarjeta);           
-
-                                
-	                        $model->fecha=''; 
-	                        $model->cantidad_meses='';
-	                        $model->id_cliente='';
-	                        $model->id_tarifa='';
-	                        $model->id_tarjeta='';                        
-	                        $msg = 'Se generó correctamente el contrato';
+	                        $insertar = new Contrato;
+	                        $insertar->fecha=$model->fecha; 
+	                        $insertar->cantidad_meses=$model->cantidad_meses;
+	                        $insertar->id_cliente=$model->id_cliente;
+	                        $insertar->id_tarifa=$model->id_tarifa;
+	                        $insertar->id_tarjeta=$model->id_tarjeta;
+	                        if($insertar->save()){                       
+	                        	$insertar->save(false); 
+		                        $msg = '<strong class="text-info">Se generó correctamente el contrato</strong>'; 
+	                        }else{
+	                        	$msg ='<strong class="text-error"> Error al cargar los datos</strong>';
+	                        }
+		                        $model->fecha=''; 
+		                        $model->cantidad_meses='';
+		                        $model->id_cliente='';
+		                        $model->id_tarifa='';
+		                        $model->id_tarjeta=''; 
 	                }
 	        }
 	        
@@ -85,18 +92,11 @@ class AdministradorController extends Controller
                 $model->por_minuto='';
                 $model->por_mes='';
                 $model->tipo_cliente='';
-                $msg = 'Se generó correctamente el contrato';
+                $msg = '<strong class="text-info">Se generó correctamente el contrato</strong>';
             }
         }
 
         $this->render('tarifa',array('model'=>$model,'msg'=>$msg));
 
 	}
-
-
-
-
-
-
-
 }
