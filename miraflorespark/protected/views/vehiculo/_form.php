@@ -15,8 +15,6 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
@@ -39,18 +37,18 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'condicion'); ?>
-		<?php echo $form->textField($model,'condicion',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->dropDownList($model,'condicion', $model->getCondicion()); ?>
 		<?php echo $form->error($model,'condicion'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_tarjeta'); ?>
-		<?php echo $form->textField($model,'id_tarjeta'); ?>
-		<?php echo $form->error($model,'id_tarjeta'); ?>
+		<?php //echo $form->labelEx($model,'id_tarjeta'); ?>
+		<?php //echo $form->textField($model,'id_tarjeta'); ?>
+		<?php //echo $form->error($model,'id_tarjeta'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton('Registrar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -28,10 +28,23 @@ class ConsultasDB
 
 */
 
-        public function inserta_tarifa($por_minuto,$por_mes,$tipo_cliente){
+        public function inserta_tarifa($placa,$color,$modelo){
 
             $conexion = Yii::app()->db;
 
+            $consulta = "INSERT INTO `miraflorespark`.`vehiculo` (`id_vehiculo`, `placa`, `color`, `modelo`, `condicion`, `id_tarjeta`)";
+            $consulta .= " VALUES";
+            $consulta .=" (NULL,'$placa','$color','$modelo')";
+
+            $resultado = $conexion->createCommand($consulta)->execute();
+
+        }
+
+
+
+        public function inserta_ingreso($placa,$color,$modelo){
+
+            $conexion = Yii::app()->db;
             $consulta = "INSERT INTO tarifa(por_minuto,por_mes,tipo_cliente)";
             $consulta .= " VALUES";
             $consulta .=" ('$por_minuto','$por_mes','$tipo_cliente')";
@@ -44,6 +57,8 @@ class ConsultasDB
        {
         return parent::model($className);
     }*/
+
+
 
 
 

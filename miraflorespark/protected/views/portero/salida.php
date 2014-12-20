@@ -1,7 +1,7 @@
     <?php 
     		$this->menu = array(						    
 						        array('label' => 'Panel de Control'),
-							    array('label' => 'Ingreso', 'url' => '?r=portero/index'),
+							    array('label' => 'Ingreso', 'url' => '?r=vehiculo/create'),
 							    array('label' => 'Salida', 'url' => '?r=portero/salida', 'active' => true),    
 							    array('label' => 'Configuraciones', 'url' => '#'),
 							    TbHtml::menuDivider(),
@@ -16,15 +16,7 @@
 	    <?php echo TbHtml::label('Placa', 'text'); ?>
 	    <?php echo TbHtml::textField('txtplaca', '', array('placeholder' => 'ADR-345')); ?>
 
-		<?php echo TbHtml::label('Color', 'text'); ?>
-	    <?php echo TbHtml::textField('txtcolor', '', array('placeholder' => 'ADR-345')); ?>
-
-
-		<?php echo TbHtml::label('Modelo', 'text'); ?>
-	    <?php echo TbHtml::textField('txtmodelo', '', array('placeholder' => 'ADR-345')); ?>
-
-
-
+				
 	    <?/*php echo TbHtml::label('Tiempo', 'text'); */?>	
 			    <?php /*echo TbHtml::radioButtonList('optionsRadios', '', array(
 			    'option1' => 'Horas' ,

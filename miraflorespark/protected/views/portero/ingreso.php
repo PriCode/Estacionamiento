@@ -1,15 +1,4 @@
     <?php 
-
-    $this->breadcrumbs=array(
-	'Vehiculos'=>array('index'),
-	'Create',
-);
-
-$this->menu2=array(
-	array('label'=>'List Vehiculo', 'url'=>array('index')),
-	array('label'=>'Manage Vehiculo', 'url'=>array('admin')),
-);
-
     		$this->menu = array(						    
 						        array('label' => 'Panel de Control'),
 							    array('label' => 'Ingreso', 'url' => '?r=portero/index', 'active' => true),
@@ -28,30 +17,48 @@ $this->menu2=array(
     )); ?>
 	<legend></legend>
 
-    <?php echo TbHtml::beginFormTb(TbHtml::FORM_LAYOUT_VERTICAL,'index.php?r=portero/Registro','POST',array('id'=>'formulario'))?>
 
 
-    <fieldset>
-	    <legend>Registro</legend>
-	    <?php echo TbHtml::label('Placa', 'text'); ?>
-	    <?php echo TbHtml::textField('txtplaca', '', array('placeholder' => 'ADR-345')); ?>
-		<?php echo TbHtml::label('Color', 'text'); ?>
-	    <?php echo TbHtml::textField('txtcolor', '', array('placeholder' => 'ADR-345')); ?>
-		<?php echo TbHtml::label('Modelo', 'text'); ?>
-	    <?php echo TbHtml::textField('txtmodelo', '', array('placeholder' => 'ADR-345')); ?>    
-	    <?php echo TbHtml::submitButton('Generar Ticket',array('value'=>'formulario','class' => 'btn btn-primary')); ?>
 
-    </fieldset>
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'ingreso-form',
+	'method' => 'post',
+    'action' => Yii::app()->createUrl('portero/ingreso'),
+    'enableClientValidation' => false,
+    'enableAjaxValidation'=>false,
+    'clientOptions'=> array(
+    'validaOnSubmit'=>true,
+))); ?>
 
-	<?php echo TbHtml::endForm(); 
-		if (isset($msgFrontal)) {
-		echo $msgFrontal;
-			}
-	?>
 
-	
+	<?php echo $form->errorSummary($model); ?>
 
-	<?php if (isset($model)) {?>
+	<div class="row">
+		<?php echo $form->labelEx($model,'Placa'); ?>
+		<?php echo $form->textField($model,'placa',array('size'=>5,'maxlength'=>5)); ?>
+		<?php echo $form->error($model,'placa'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Modelo'); ?>
+		<?php echo $form->textField($model,'modelo',array('size'=>5,'maxlength'=>5)); ?>
+		<?php echo $form->error($model,'modelo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Color'); ?>
+		<?php echo $form->textField($model,'color',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'color'); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton('Save'); ?>
+	</div>
+
+<?php $this->endWidget(); ?>
+
+
+	<?php if (!isset($model)) {?>
 		 <legend>Registro</legend>
 		 <?php echo TbHtml::label('Nro de Lote:', 'text'); ?>
 	     <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
@@ -62,4 +69,7 @@ $this->menu2=array(
 	     <?php echo TbHtml::textField('text', '', array('placeholder' => '....')); ?>
 			
 	<?php } ?>
+
+
+
 

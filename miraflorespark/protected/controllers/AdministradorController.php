@@ -70,6 +70,7 @@ class AdministradorController extends Controller
 
         $model = new RegistraTarifa;
         $msg = '';
+        print_r($_POST);
         if(isset($_POST['ajax']) && $_POST['ajax'] == 'form')
         {
             echo CActiveForm::validate($model);
@@ -79,6 +80,7 @@ class AdministradorController extends Controller
 
         if(isset($_POST['RegistraTarifa']))
         {
+
             $model->attributes = $_POST['RegistraTarifa'];
             if(!$model->validate())
             {
@@ -87,8 +89,6 @@ class AdministradorController extends Controller
             {
                 $insertar = new ConsultasDB;
                 $insertar->inserta_tarifa($model->por_minuto,$model->por_mes,$model->tipo_cliente);
-
-
                 $model->por_minuto='';
                 $model->por_mes='';
                 $model->tipo_cliente='';
@@ -99,4 +99,5 @@ class AdministradorController extends Controller
         $this->render('tarifa',array('model'=>$model,'msg'=>$msg));
 
 	}
+
 }
