@@ -28,7 +28,14 @@ $this->breadcrumbs=array(
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
 
-<?php   if ($ticket==1) {
+<?php if ($ticket==1){
+
+
+	//print_r($model);
+	print_r($ticket);
+	print_r($parametros);
+
+	/*
 	 echo TbHtml::button('Imprimir ticket', array(
     'style' => TbHtml::BUTTON_COLOR_PRIMARY,
     //'size' => TbHtml::BUTTON_SIZE_LARGE,
@@ -63,9 +70,8 @@ $this->breadcrumbs=array(
 
 	// echo CHtml::textArea('detalles',$html);	 
 
-
-
-
-
-
+*/
 } ?>
+
+
+

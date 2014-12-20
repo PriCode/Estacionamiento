@@ -40,9 +40,9 @@ class VehiculoController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('*'),
 			),
-			array('deny',  // deny all users
+			/*array('deny',  // deny all users
 				'users'=>array('*'),
-			),
+			),*/
 		);
 	}
 
@@ -57,6 +57,109 @@ class VehiculoController extends Controller
 		));
 	}
 
+
+
+
+
+
+public function actionSalida(){
+		
+		$model=new Vehiculo;
+		$modelT=new Ticket;
+			
+
+			$key=0;
+			$pago=null;
+			$objTime1=null;
+			$objTime2=null;
+			$condicion=null;
+		
+	if(isset($_POST['Vehiculo']))
+		{
+			
+		  $placa= $_POST['Vehiculo']['placa'];
+
+		  $condicion=Vehiculo::model()->find(array(
+					    'select'=> 'condicion',
+					    'condition'=>'placa=:placa',
+					    'params'=>array('placa'=>$placa),
+					    ));
+		
+		//calculo de tarifa
+		if (strcasecmp(strval($condicion['condicion']),'miembro')) {			
+			//busca tarifa
+			$tarifaMiembro=Tarifa::model()->find(array(
+					    'select'=>'por_minuto',
+					    'condition'=>'id_tarifa=:id_tarifa',
+					    'params'=>array('id_tarifa'=>1),
+					));				
+		}else{
+			$tarifaMiembro=Tarifa::model()->find(array(
+					    'select'=>'por_minuto',
+					    'condition'=>'id_tarifa=:id_tarifa',
+					    'params'=>array('id_tarifa'=>2),
+					));				
+		}
+
+		//buscar el ticket
+			$idVehiculo=Vehiculo::model()->find(array(
+					    'select'=> 'id_vehiculo',
+					    'condition'=>'placa=:placa',
+					    'params'=>array('placa'=>$placa),
+					    ));
+
+			$tiempoI= Ticket::model()->find(array(
+					    'select'=> 'hora_llegada',
+					    'condition'=>'id_vehiculo=:id_vehiculo',
+					    'params'=>array('id_vehiculo'=>$idVehiculo['id_vehiculo']),
+					   ));
+
+		//minutos aleatorios	
+			$objTime1=new DateTime($tiempoI['hora_llegada']);
+
+			$numMinutes=rand(10,60);			
+			$objTime2 = new DateTime('2011-11-17 05:05:4');
+			$objTime2->add(new DateInterval('PT' . $numMinutes . 'M'));
+			$stamp = $objTime2->format('Y-m-d H:i:s');
+				
+
+			$pago= strval($numMinutes*$tarifaMiembro['por_minuto']); 
+
+			//if($modelT->save())
+				//$this->render('admin',array('pago'=>$pago));
+				//$this->redirect(array('view','id'=>$model->id_ticket));
+		
+		
+		// liberar parking
+			//recuperar id_parking
+
+			$idParking= Ticket::model()->find(array(
+					    'select'=> 'id_parking',
+					    'condition'=>'id_vehiculo=:id_vehiculo',
+					    'params'=>array('id_vehiculo'=>$idVehiculo['id_vehiculo']),
+					   ));			
+		
+			$parkin=Parking::model()->findByPk($idParking['id_parking']);
+			//$parkin->estado='libre';
+
+			//$parkin->save(); 
+
+			$key=1;
+		}
+
+		$this->render('admin',array(					
+			'key'=>$key,
+			'model'=>$model,
+			'pago'=>$pago,
+			'time_llegada'=>$objTime1,
+			'time_partida'=>$objTime2,
+			'condicion'=>$condicion,
+			'parkin'=>$parkin['id_parking'],
+
+		));
+
+}
+
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -64,23 +167,51 @@ class VehiculoController extends Controller
 	public function actionCreate()
 	{
 		$model=new Vehiculo;
+		$modelT=new Ticket;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-		
+		// $this->performAjaxValidation($model);		
+
 		$ticket=0;
+		$parametros[]=null;
 		if(isset($_POST['Vehiculo']))
 		{
-			$model->attributes=$_POST['Vehiculo'];
-			$model->save();
+			//print_r($_POST['Vehiculo']['condicion']);
+			$parametros=array();
+
+			$model->attributes=$_POST['Vehiculo'];			
+			
 			$ticket=1;
 			//if($model->save())
 				//$this->redirect(array('view','id'=>$model->id_vehiculo));
+
+			$parametros[]=$modelT->fecha= date("d-m-Y");
+			$parametros[]=$modelT->hora_llegada= date("H:i:s");
+			$parametros[]=$modelT->hora_salida= date("H:i:s");
+
+				//asignacion de lote
+			$loteAsignado=null;
+
+			$loteAsignado=$modelT->id_parking=Parking::model()->find(array(
+	    			'select'=> 'id_parking',
+				    'condition'=>'estado=:estado',
+				    'params'=>array('estado'=>'Libre'),
+			));
+
+			if ($loteAsignado!=null) {
+				$loteAsignado='No hay lugar disponible';
+			}else{
+				$parametros[]=$loteAsignado;
+			}
+  			$model->save();
+			$modelT->save();			
+
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
 			'ticket'=>$ticket,
+			'parametros'=>$parametros,
 		));
 	}
 
@@ -139,12 +270,25 @@ class VehiculoController extends Controller
 	public function actionAdmin()
 	{
 		$model=new Vehiculo('search');
+	
+			$key=0;
+			$pago=null;
+			$objTime1=null;
+			$objTime2=null;
+			$condicion=null;
+	
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Vehiculo']))
 			$model->attributes=$_GET['Vehiculo'];
 
 		$this->render('admin',array(
+			'key'=>$key,
 			'model'=>$model,
+			'pago'=>$pago,
+			'objTime1'=>$objTime1,
+			'objTime2'=>$objTime2,
+			'condicion'=>$condicion,
+
 		));
 	}
 

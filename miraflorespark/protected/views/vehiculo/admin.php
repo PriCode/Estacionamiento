@@ -38,11 +38,48 @@ $('.search-form form').submit(function(){
 
 <h2>Salida de Vehiculos</h2>
 
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<?php 
+	if ( $key==1) {
+
+
+			//echo $key;
+			echo " Pago: ". $pago."<br>";
+
+			echo $time_llegada->format('Y-m-d H:i:s')."<br>";
+
+			echo $time_partida->format('Y-m-d H:i:s')."<br>";	
+			echo " Condicion: ".$condicion['condicion']."<br>";
+			echo " Parking: ". $parkin['id_parking'];
+
+	}else{
+
+			echo "<div class=\"search-form\" style=\"display:none\">";
+
+			 $this->renderPartial('_search',array(
+				'model'=>$model,
+			)); 
+			echo "</div><!-- search-form -->";
+
+
+			 $form=$this->beginWidget('CActiveForm', array(
+				'action'=>'?r=vehiculo/salida',
+				'method'=>'post',
+			)); 
+
+			echo "<div class=\"row\">";
+					 echo $form->label($model,'placa'); 
+					 echo $form->textField($model,'placa',array('size'=>7,'maxlength'=>7)); 
+			echo "</div><div class=\"row buttons \">";
+					 echo CHtml::submitButton('Calcular'); 
+			echo  "</div>";
+				 $this->endWidget(); 
+
+	}
+?>
+
+
+
+
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'vehiculo-grid',
@@ -60,3 +97,8 @@ $('.search-form form').submit(function(){
 		),
 	),
 )); ?>
+
+
+
+
+
